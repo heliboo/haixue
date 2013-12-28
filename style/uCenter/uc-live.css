@@ -1,0 +1,74 @@
+.live-main{width: 100%;}
+.live-tab{height:130px; background: url(../../images/uc-live/live-tab-bg.png) repeat-x; overflow: hidden; font-family: microsoft yahei;}
+.live-con{ background: url(../../images/uc-live/live-bg.png) repeat-x;}
+/*标签*/
+.live-tab h2{width: 943px; margin: 0 auto; padding: 10px 0 0 37px;}
+.live-tab h2 .fb{font-size: 40px;} 
+.live-tab .tabnav{width: 943px; margin: 13px auto 0; padding: 0 0 0 37px; position: relative; height: 50px;}
+.live-tab .tabnav a{  float: left; width: 160px; height: 50px; margin-right: 10px; line-height: 45px; font-size: 16px; font-weight: 600; text-align: center; color: #fff; background: #d6c5b1; border-radius: 3px;}
+.live-tab .tabnav a.current{background: #08c;}
+.live-tab .tabnav .hover{ position: absolute; left:0px; bottom:5px; display: block; width: 160px; height: 5px; border-bottom: 3px solid #68553e; overflow: hidden;}
+.live-tab .tabnav a:hover{text-decoration: none; background: #b2a18d;}
+.live-tab .tabnav a.current:hover{background: #08c;}
+.live-part .live-timetop,.live-part .liveAngle{background-image: url(../../images/uc-live/live-timeicon.png); background-repeat: no-repeat;}
+/*end*/
+/*默认列表*/
+.live-con .tabcon{width: 980px; margin: 0px auto 0; min-height: 300px; padding-top:20px;}
+.live-part{height: 332px; margin-left: 37px; position: relative; font-family: microsoft yahei;}
+.live-part .live-timecon{height: 195px; width: 780px; background: #fff; position: absolute; left: 82px; top: 68px; z-index: 1; padding: 20px; border:1px solid #ded4c7; border-radius: 5px; }
+.live-part .live-timeline{width: 160px; background: url(../../images/uc-live/live-timeline.png) no-repeat 9px 49px; height: 332px;}
+.live-part .live-timetop{width: 160px; height: 59px; padding-top: 1px; }
+.live-part .live-timetop .n{font-size: 32px; font-weight: 600; float: left; height: 44px; border-right: 1px solid #d1d1d1; line-height: 44px; padding: 0 6px;}
+.live-part .live-timetop .m{font-size: 14px; float: left; height: 44px; border-left: 1px solid #fbfbfb; line-height: 1.3; padding: 0 6px;}
+.live-part .live-timetop .m em{ font-weight: 600; display: block; margin-top: 5px;}
+.live-part .liveAngle{ background-position: 0 -65px; width: 16px; height: 27px; position: absolute; left: 67px; top:88px; z-index: 2; }
+.live-part .live-timePart{float: left; width: 255px; height: 195px; background: #b0ddf4; text-align: center; border-right:2px solid #fff;}
+.live-part .live-timePart span{font-family: microsoft yahei; font-size: 40px; font-weight: 600; color: #fff; display: block; height: 137px; line-height: 130px; }
+.live-part .live-timePart .b{height: 58px; background: #96bcd0; font-size: 28px; color: #fff; line-height: 58px;}
+.live-part .live-timetext{float:left; padding: 15px; background: #f7f7f7; width: 490px; height: 165px; line-height: 1.8;}
+.live-part .live-timetext h3{font-size: 22px; padding-bottom: 10px;}
+.live-part .live-timetext p{font-size: 18px;}
+.live-part .live-timetext .pword{}
+.live-part .live-timetext .pword .pword-s{background: #b2a18d;  margin-top: 20px; float: left; padding: 3px 10px; color: #fff; border-radius: 3px; font-size: 16px; font-weight: 600;}
+.live-part .live-timetext .pword .fr{margin-top:20px; }
+.live-part .live-timetext .pword .fr .btn-big{margin-left: 5px;}
+.live-part h3 .live-new{width: 59px; height: 27px; line-height: 25px; text-indent: 8px; background: url(../../images/uc-live/live-timeicon.png) no-repeat 0px -104px; color: #fff; display: inline-block; margin-right: 5px; font-size: 20px;}
+.liveMore{ text-align: center; padding: 30px 0; font-size: 14px;}
+/*end*/
+/*vip与直接结束*/
+.live-part.vip .live-timeline{width: 160px; background: url(../../images/uc-live/live-timeline.png) no-repeat 9px -249px; height: 332px;}
+.live-part.vip .live-timetop .m{font-size: 18px; line-height: 45px;}
+.live-part.vip .live-timecon .fl{border-right: 1px solid #e3e3e3; width: 540px;}
+.live-part.vip .live-timecon .fr{width: 230px; text-align: center; padding-top: 30px;}
+.live-part.after .live-timeline{width: 160px; background: url(../../images/uc-live/live-timeline.png) no-repeat 9px -549px; height: 332px;}
+.live-part.after .live-timetop{color: #a5a5a5;}
+.live-part.after .live-timePart{background: #f7f7f7;}
+.live-part.after .live-timePart span{font-family: microsoft yahei; color: #d1d1d1; }
+.live-part.after .live-timePart .b{background: #f1f1f1; color: #d1d1d1;}
+.live-part.after .live-timetext .pword .pword-s{background: #e3e3e3;}
+/*end*/
+
+.live-con .sift-box2{ width: 906px; margin: 0 auto 0;}
+.live-con .sift-box2 .sift-con2{ background:#08c; line-height:34px; color:#fff; padding: 0 10px;}
+.live-con .sift-box2 .sift-con2 a{color:#b0ddf4; padding:0 15px;}
+.live-con .sift-box2 .sift-con2 a:hover{color:#fff;}
+.live-con .sift-box2 .sift-con2 a.current{color:#fff; font-weight:600;}
+/**/
+
+
+
+
+/*会员直播与至尊直播介绍图片*/
+.livePicPage{ position: absolute; top: 210px; left: 370px; z-index: 5;}
+.livePicPage a{display:inline-block; width: 16px; height: 16px; overflow: hidden; background: #000; color: #fff; border-radius: 8px; filter:alpha(opacity=70); -moz-opacity:0.7; opacity:0.7; margin-right: 10px; text-align:center; line-height: 16px;}
+.livePicPage a.activeSlide{background: #999; color: #fff;}
+.livePicPage a:hover{text-decoration: none;}
+
+.livePicVipC a{ display:block; width:40px; height:61px; background:url(../../images/uCenter/poster-spirit.png) no-repeat; text-indent:-9999px; position:absolute; top:100px; z-index:33;}
+.livePicVipC .livePicVipL{ background-position:0 -49px; left:5px;}
+.livePicVipC .livePicVipR{ background-position:-40px -49px; right:5px;}
+.livePicVipC .livePicExtremeL{ background-position:0 -49px; left:5px;}
+.livePicVipC .livePicExtremeR{ background-position:-40px -49px; right:5px;}
+
+
+/*end*/

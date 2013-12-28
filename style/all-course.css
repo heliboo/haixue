@@ -1,0 +1,35 @@
+
+.course-list{ width:980px; overflow:hidden; margin:20px 0;}
+.course-item{ width:310px; height:230px; float:left; display:inline; margin:0 25px 25px 0; background:#0088cc;}
+.course-item:hover{ background:#139ce1;}
+.course-item3,.course-item7{ margin-right:0;}
+.course-item h3{ height:40px; margin:20px 0 0 30px; text-indent:-9999px; font-size:28px;}
+.course-item1 h3{ background:url(../images/new/course-tit1.png) no-repeat;}
+.course-item2 h3{ background:url(../images/new/course-tit2.png) no-repeat;}
+.course-item3 h3{ background:url(../images/new/course-tit3.png) no-repeat;}
+.course-item4 h3{ background:url(../images/new/course-tit4.png) no-repeat;}
+.course-item5 h3{ background:url(../images/new/course-tit5.png) no-repeat;}
+.course-item6 h3{ background:url(../images/new/course-tit6.png) no-repeat;}
+.course-item7 h3{ background:url(../images/new/course-tit7.png) no-repeat;}
+
+.course-item1,.course-item3{ background:#ef7850;}
+.course-item1:hover,.course-item3:hover{ background:#fd865e;}
+
+.course-item4{ background:#5ec45e url(../images/new/course-item4-bg.png) no-repeat right bottom;}
+.course-item4:hover{ background:#74d374 url(../images/new/course-item4-bg.png) no-repeat right bottom;}
+.course-item5{ height:110px; margin-bottom:10px;}
+.course-item6{ height:110px;}
+.course-item7{ margin-top:-120px; background:#f1b941;}
+.course-item7:hover{ background:#f7c250;}
+
+.list-link{ overflow:hidden; padding:25px 0 0 20px; _zoom:1;}
+.list-link li{ width:120px; height:38px; line-height:38px; padding-left:20px; background:url(../images/new/cy1.png) no-repeat left; float:left; display:inline;}
+.list-link li a{ color:#fff; font-size:18px; font-family:Microsoft Yahei;}
+.list-link li a:hover{ color:#fff;}
+.list-link li.big{ width:200px;}
+
+.course-item2 .list-link li,.course-item4 .list-link li{ background:url(../images/new/cy1.png) no-repeat left;}
+.course-item5 .list-link,.course-item6 .list-link{ padding-top:5px;}
+.course-item4 .list-link li{ width:200px;}
+
+

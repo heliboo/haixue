@@ -1,0 +1,8 @@
+/*个人资料*/
+.perSet-perInfor{}
+.perSet-perInfor fieldset{border-width:1px 0 0 0; border-style: solid; border-color:#e5e5e5;}
+.perSet-perInfor fieldset .fr{margin-top: -20px;}
+.perInfor-basic,.perInfor-contact,.perInfor-job,.perInfor-edu{padding: 20px 100px 0px 15px;}
+.perInfor-basic .uc-form,.perInfor-contact .uc-form,.perInfor-job .uc-form,.perInfor-edu .uc-form{padding-top: 10px;}
+
+.his-list{ width:610px;}

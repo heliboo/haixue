@@ -1,0 +1,226 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>排名-试卷册-个人中心-嗨学网</title>
+<link href="../style/base.css" rel="stylesheet">
+<link href="../style/uCenter/uc-common2.css" rel="stylesheet">
+<link href="../style/uCenter/uc-exam.css" rel="stylesheet">
+<style type="text/css">
+/*试卷居中样式*/
+.footer .footer-box{margin:0 auto; width:980px; padding-left:300px;}
+.main{margin:20px auto 0;}
+.contenter{margin:20px auto 0; float:none;}
+.utop .utop-box{margin:0 auto; width:980px;}
+</style>
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="../js/jquery.artDialog.js"></script>
+<script type="text/javascript" src="../js/uc-common2.js"></script>
+<script type="text/javascript" src="../js/uc-exam.js"></script>
+<script>
+$(document).ready(function() {
+	$(window).scroll(function() {
+		var bh=$(document).scrollTop();
+		var $secMenu=$("#J-secMenu");
+		if(bh>=250){
+			$secMenu.addClass("sec-menu-scroll");
+			if(!window.XMLHttpRequest){
+				$secMenu.css("top",bh)
+			};
+		}else{
+			$secMenu.removeClass("sec-menu-scroll");
+		} 
+	});
+});
+</script>
+</head>
+
+
+<body>
+<!--uheader start-->
+<div class="uheader">
+    <div class="uheader-box">
+        <div class="logo"><a href="uc-friend2.html"><img src="../images/uCenter/ulogo2.png" alt="嗨学网"></a></div>
+		<div class="hnav-li hnav-course">
+			<a class="hnav-a" href="javascript:void(0)"><em>全部课程</em><span class="drop-ico"></span></a>
+			<div class="sdrop-box">
+				<ul class="all-course-list">
+					<li class="category1"><h3>建造学院</h3><div class="cItem"><a href="/jz">一级建造师</a><a href="/jz02">二级建造师</a><a href="/zjs">造价工程师</a><a href="/jl">监理工程师</a><a href="/aqgcs">安全工程师</a><a href="/wy">物业管理师</a></div></li>
+					<li class="category2"><h3>会计学院</h3><div class="cItem"><a href="/cpa">注册会计师</a><a href="/kjs">中级会计职称</a><a href="/zlkjs">初级会计职称</a><a href="/zs">注册税务师</a><a href="/kjz">会计资格证</a></div></li>
+					<li class="category3"><h3>继续教育学院</h3><div class="cItem"><a href="/zk">自考学历</a><a href="/jz01">专本学历</a><a href="/ky">研究生统一入学考试</a><a href="/ck">成考</a><a href="/gct">GCT</a></div></li>
+					<li class="category4"><h3>金融学院</h3><div class="cItem"><a href="/zq">证券从业</a><a href="/qh">期货从业</a><a href="/yh">银行从业</a></div></li>							
+					<li class="category5"><h3>法学院</h3><div class="cItem"><a href="/sf">司法考试</a><a href="/fl">企业法律顾问</a></div></li>
+					<li class="category6"><h3>IT学院</h3><div class="cItem"><a href="/it">悦成教育</a></div></li>
+					<li class="category7"><h3>其它</h3><div class="cItem"><a href="/rl">人力资源管理师</a><a href="/xl">心理咨询师</a><a href="/gwy">公务员</a><a href="/jjs">经济师</a><a href="/bg">报关员</a><a href="/yxs">网络营销师</a></div></li>
+				</ul>
+			</div>
+		</div>
+        <div class="search">
+            <input class="search-input" value="商品、问题、试题、试卷" name="" type="text">
+            <a href="uc-search.html" class="sarch-btn">搜 索</a>
+        </div>
+		<ul class="hnav">
+			<li class="hnav-li hnav-app">
+				<a class="hnav-a" href="uc-friend2.html"><em>首页</em></a>
+			</li>
+			<li class="hnav-li hnav-app">
+				<span class="mark">5</span>
+				<a class="hnav-a" href="#"><em>应用</em><span class="drop-ico"></span></a>
+				<div class="sdrop-box">
+					<ul class="sdrop-list">
+						<li class="sdrop-classmate"><a href="uc-friend.html">同学动态<em>(99+)</em></a></li>
+						<li class="sdrop-myhome"><a href="uc-timeline.html">我的主页</a></li>
+						<li class="sdrop-order"><a href="uc-order.html">订单管理<em>(1)</em></a></li>
+						<li class="sdrop-notice"><a href="uc-posterwall.html">公告资讯</a></li>
+						<li class="sdrop-test"><a href="uc-exam.html">习题练习</a></li>
+						<li class="sdrop-exam"><a href="uc-testPaper.html">考试中心</a></li>
+						<li class="sdrop-download last"><a href="uc-download.html">考前资料</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="hnav-li hnav-test"><a class="hnav-a" href="uc-exam.html"><em>题库</em></a></li>
+			<li class="hnav-li hnav-user">
+				<span class="mark">5</span>
+				<a class="hnav-a" href="uc-timeline.html"><span class="face"><img src="../img/user30-2.jpg" width="30" height="30" alt="" /></span><span class="drop-ico"></span></a>
+				<div class="sdrop-box">
+					<ul class="sdrop-list">
+						<li class="sdrop-set"><a href="uc-personSet.html">账号设置</a></li>
+						<li class="sdrop-invite"><a href="uc-myFriend.html">邀请好友</a></li>
+						<li class="sdrop-message"><a href="uc-message.html">消息通知<em>(5)</em></a></li>
+						<li class="sdrop-feedback"><a href="uc-feedback.html">意见反馈</a></li>
+						<li class="sdrop-help"><a href="../help/index.html">查看帮助</a></li>
+						<li class="sdrop-quit last"><a href="../index-new2.html">安全退出</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+    </div>
+</div>
+<!--uheader end-->
+
+<!--main start-->
+    <div class="contenter">
+    	<div class="testP-con">
+            <div class="t-pStart-head">
+                <h3 class="t-pSrart-tit color_black">2012年10月初级会计职称考试《经济法基础》押密试题(2)</h3>
+                <div class="t-pSrart-01">
+                    <span>考试类别：注册会计册会计师</span>
+                    <span>考试科目：水利水电工程管电工程管理与理与实务</span>
+                </div>
+                <div class="t-pSrart-02">
+                    <span>试卷总分：100分</span>
+                    <span>建议时间：30分钟</span>
+                    <span class="color_orange">参考人数：5000人 </span>
+                    <span class="color_orange">最高分数：100分</span>
+                    <span class="color_orange">最低分数：5分</span>
+                </div>
+                <div class="questionAction"><span class="action-favorite"><em></em><a class="fav-add" id="favorite-add2">收藏试卷</a><a class="fav-cancel">取消收藏</a></span></div>
+            </div>
+            <div class="testP-rank mt20">
+                <h3>本卷排行榜<em>(每日更新)</em></h3>
+                <ul>
+                    <li class="top">
+                        <span class="r-num">1</span>
+                        <span class="r-pic"><a href="uc-tofriend.html" title="快乐天使"><img src="../img/uCenter/user50-1.jpg" width="50" height="50" alt="" /></a></span>
+                        <div class="r-p"><a href="uc-tofriend.html" title="快乐天使">快乐天使</a><br>分数：<em class="color_orange mr20">100分</em>    答卷时间：50分钟</div>
+                        <span class="r-button"><a href="#" class="addAtten"><span class="icon-addAtten">+</span>关注</a></span>
+                        <a href="uc-tofriend.html" class="r-other">去看看他是怎么学习的</a>
+                    </li>
+                    <li class="top">
+                        <span class="r-num">2</span>
+                        <span class="r-pic"><a href="uc-tofriend.html" title="yan...@163.com"><img src="../img/uCenter/user50-1.jpg" width="50" height="50" alt="" /></a></span>
+                        <div class="r-p"><a href="uc-tofriend.html" title="yan...@163.com">yan...@163.com</a><br>分数：<em class="color_orange mr20">98分</em>    答卷时间：48分钟</div>
+                        <span class="r-button"><em class="okAtten" style="display: block;">已关注</em></span>
+                        <a href="uc-tofriend.html" class="r-other">去看看他是怎么学习的</a>
+                    </li>
+                    <li class="top">
+                        <span class="r-num">3</span>
+                        <span class="r-pic"><a href="uc-tofriend.html" title="快乐天使"><img src="../img/uCenter/user50-1.jpg" width="50" height="50" alt="" /></a></span>
+                        <div class="r-p"><a href="uc-tofriend.html" title="快乐天使">快乐天使</a><br>分数：<em class="color_orange mr20">100分</em>    答卷时间：50分钟</div>
+                        <span class="r-button"><a href="#" class="addAtten"><span class="icon-addAtten">+</span>关注</a></span>
+                        <a href="uc-tofriend.html" class="r-other">去看看他是怎么学习的</a>
+                    </li>
+                    <li>
+                        <span class="r-num">4</span>
+                        <span class="r-pic"><a href="uc-tofriend.html" title="yan...@163.com"><img src="../img/uCenter/user50-1.jpg" width="50" height="50" alt="" /></a></span>
+                        <div class="r-p"><a href="uc-tofriend.html" title="yan...@163.com">yan...@163.com</a><br>分数：<em class="color_orange mr20">98分</em>    答卷时间：48分钟</div>
+                        <span class="r-button"><em class="okAtten" style="display: block;">已关注</em></span>
+                        <a href="uc-tofriend.html" class="r-other">去看看他是怎么学习的</a>
+                    </li>
+                    <li>
+                        <span class="r-num">5</span>
+                        <span class="r-pic"><a href="uc-tofriend.html" title="快乐天使"><img src="../img/uCenter/user50-1.jpg" width="50" height="50" alt="" /></a></span>
+                        <div class="r-p"><a href="uc-tofriend.html" title="快乐天使">快乐天使</a><br>分数：<em class="color_orange mr20">100分</em>    答卷时间：50分钟</div>
+                        <span class="r-button"><a href="#" class="addAtten"><span class="icon-addAtten">+</span>关注</a></span>
+                        <a href="uc-tofriend.html" class="r-other">去看看他是怎么学习的</a>
+                    </li>
+                    <li>
+                        <span class="r-num">6</span>
+                        <span class="r-pic"><a href="uc-tofriend.html" title="yan...@163.com"><img src="../img/uCenter/user50-1.jpg" width="50" height="50" alt="" /></a></span>
+                        <div class="r-p"><a href="uc-tofriend.html" title="yan...@163.com">yan...@163.com</a><br>分数：<em class="color_orange mr20">98分</em>    答卷时间：48分钟</div>
+                        <span class="r-button"><em class="okAtten" style="display: block;">已关注</em></span>
+                        <a href="uc-tofriend.html" class="r-other">去看看他是怎么学习的</a>
+                    </li>
+                    <li>
+                        <span class="r-num">7</span>
+                        <span class="r-pic"><a href="uc-tofriend.html" title="快乐天使"><img src="../img/uCenter/user50-1.jpg" width="50" height="50" alt="" /></a></span>
+                        <div class="r-p"><a href="uc-tofriend.html" title="快乐天使">快乐天使</a><br>分数：<em class="color_orange mr20">100分</em>    答卷时间：50分钟</div>
+                        <span class="r-button"><a href="#" class="addAtten"><span class="icon-addAtten">+</span>关注</a></span>
+                        <a href="uc-tofriend.html" class="r-other">去看看他是怎么学习的</a>
+                    </li>
+                    <li>
+                        <span class="r-num">8</span>
+                        <span class="r-pic"><a href="uc-tofriend.html" title="yan...@163.com"><img src="../img/uCenter/user50-1.jpg" width="50" height="50" alt="" /></a></span>
+                        <div class="r-p"><a href="uc-tofriend.html" title="yan...@163.com">yan...@163.com</a><br>分数：<em class="color_orange mr20">98分</em>    答卷时间：48分钟</div>
+                        <span class="r-button"><em class="okAtten" style="display: block;">已关注</em></span>
+                        <a href="uc-tofriend.html" class="r-other">去看看他是怎么学习的</a>
+                    </li>
+                    <li>
+                        <span class="r-num">9</span>
+                        <span class="r-pic"><a href="uc-tofriend.html" title="快乐天使"><img src="../img/uCenter/user50-1.jpg" width="50" height="50" alt="" /></a></span>
+                        <div class="r-p"><a href="uc-tofriend.html" title="快乐天使">快乐天使</a><br>分数：<em class="color_orange mr20">100分</em>    答卷时间：50分钟</div>
+                        <span class="r-button"><a href="#" class="addAtten"><span class="icon-addAtten">+</span>关注</a></span>
+                        <a href="uc-tofriend.html" class="r-other">去看看他是怎么学习的</a>
+                    </li>
+                    <li>
+                        <span class="r-num">10</span>
+                        <span class="r-pic"><a href="uc-tofriend.html" title="yan...@163.com"><img src="../img/uCenter/user50-1.jpg" width="50" height="50" alt="" /></a></span>
+                        <div class="r-p"><a href="uc-tofriend.html" title="yan...@163.com">yan...@163.com</a><br>分数：<em class="color_orange mr20">98分</em>    答卷时间：48分钟</div>
+                        <span class="r-button"><em class="okAtten" style="display: block;">已关注</em></span>
+                        <a href="uc-tofriend.html" class="r-other">去看看他是怎么学习的</a>
+                    </li>
+                </ul>
+                <!--start 分页-->
+                <div class="pager mt20">
+                    <div class="pager_con"><a class="disabled page-btn" href="#replyList">上一页</a><a class="current" href="#replyList">1</a><a href="#replyList">2</a><a href="#replyList">3</a><span class="separator">…&nbsp;</span><a href="#replyList">101</a><a href="#replyList">102</a><a class="page-btn" href="#replyList">下一页</a></div>
+                </div>
+                <!--end 分页-->
+                <ul>
+                    <li class="current">
+                        <span class="r-num">120</span>
+                        <span class="r-pic"><a href="uc-tofriend.html" title="yan...@163.com"><img src="../img/uCenter/user50-1.jpg" width="50" height="50" alt="" /></a></span>
+                        <div class="r-p"><a href="uc-tofriend.html" title="yan...@163.com">yan...@163.com</a><br>分数：<em class="color_orange mr20">98分</em>    答卷时间：48分钟</div>
+                    </li>
+                </ul>
+        	</div>
+                  
+        </div>
+    </div>
+
+<!--main end-->
+
+<!--footer start-->
+<div class="footer">
+	<div class="footer-box">
+        <div class="f-service"><a href="#">关于嗨学网</a> <span>|</span> <a href="#">官方微博</a> <span>|</span> <a href="#">联系我们</a> <span>|</span> <a href="#">给嗨学网留言</a></div>
+        <div class="f-info">京ICP备10217787&nbsp;&nbsp; 京公网安备110105012436&nbsp;&nbsp; copyright2010-2012 haixue.com</div>
+    </div>
+</div>
+<!--footer end-->
+
+<!--gotoTop start-->
+<div class="goto_top_e"><a href="#">返回顶部</a></div>
+<!--gotoTop end-->
+</body>
+</html>

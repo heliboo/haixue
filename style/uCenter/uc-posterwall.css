@@ -1,0 +1,57 @@
+.poster-main{ padding:20px 20px;}
+.poster-layout{ width:800px; margin-bottom:20px; padding:0 20px; position:relative;}
+.poster-layout h2{ padding-bottom:4px; font-size:20px; font-family:Microsoft Yahei; border-bottom:1px solid #e5e5e5;}
+.poster-page{ height:24px; line-height:24px; padding-bottom:2px; margin-top:-26px; text-align:right; font-size:16px;}
+.poster-page span{ padding:0 2px;}
+.poster-page .pos-page-current{ color:#ff7e00;}
+.poster-np-box{ display:none;}
+.poster-np-box a{ display:block; width:40px; height:61px; background:url(../../images/uCenter/poster-spirit.png) no-repeat; text-indent:-9999px; position:absolute; top:247px; z-index:33;}
+.poster-np-box .poster-prev{ background-position:0 -49px; left:-10px;}
+.poster-np-box .poster-next{ background-position:-40px -49px; right:-10px;}
+.poster-slide{ width:800px; height:488px; overflow:hidden; position:relative;}
+.poster-slide-item{ width:800px; overflow:hidden; position:absolute; top:0; left:0;}
+.poster-item{ float:left; width:210px; height:202px; padding:20px 28px; margin-left:-1px; border-bottom:1px solid #e5e5e5; border-left:1px solid #e5e5e5; position:relative;}
+.poster-item .title{ width:210px; height:24px; overflow:hidden; margin-bottom:12px;}
+.poster-item h3{ font-size:16px; color:#0088cc; font-family:Microsoft Yahei;}
+.poster-item h3 a{ color:#0088cc;}
+.poster-item .pic{ width:210px; height:55px; overflow:hidden; margin-bottom:5px;}
+.poster-item .txt-box{ padding:12px 15px; background:#f7f7f7;}
+.poster-item .txt{ width:180px; height:100px; overflow:hidden; line-height:20px; font-family:Microsoft Yahei;}
+.poster-item .txt2{ width:180px; height:40px; overflow:hidden; line-height:20px; font-family:Microsoft Yahei;}
+.poster-item .add-time{ margin-top:30px; text-align:right; font-weight:bold; color:#b5b5b5; font-family: Arial,Microsoft Yahei; position:absolute; right:28px; bottom:15px;}
+.poster-item .add-time em{ font-size:20px; font-family:Century; color:#a5a5a5; font-weight:bold; position:absolute; right:0; top:-25px;}
+.poster-item .add-time .add-time-icon{ display:inline-block; width:15px; height:14px; margin-right:5px; background:url(../../images/uCenter/u-icon1.png) no-repeat -78px -375px; vertical-align:-3px;}
+.poster-top{ width:476px;}
+.poster-top .title{ width:476px; height:36px; line-height:49px; padding:0 0 13px 0; margin-bottom:20px; background:url(../../images/uCenter/poster-brbg.png) repeat-x left 45px; position:relative;}
+.poster-top .title h3{ padding-left:63px; margin-top:-3px; font-size:24px;}
+.poster-top .poster-new-icon,.poster-top .poster-top-icon{ display:block; width:53px; height:49px; background:url(../../images/uCenter/poster-spirit.png) no-repeat 0 0; text-indent:-9999px; position:absolute;}
+.poster-top .poster-new-icon{ background-position:0 0;}
+.poster-top .poster-top-icon{ background-position:-53px 0;}
+
+.poster-top .pic{ width:220px; height:88px; float:left; display:inline;}
+.poster-top .txt-box{ padding:0; background:none;}
+.poster-top .txt{ width:476px; height:84px; line-height:28px; background:url(../../images/uCenter/poster-quot-icon.png) no-repeat 0 0; text-indent:2em; font-size:16px;}
+.poster-top .txt2{ width:246px; height:84px; overflow:hidden; margin-left:230px; _zoom:1; _margin-left:227px; background:url(../../images/uCenter/poster-quot-icon.png) no-repeat 0 0; text-indent:2em; font-size:16px; line-height:28px; font-family:Microsoft Yahei;}
+.poster-item .mask{ display:none; width:266px; height:242px; background:#000; opacity:0.1; filter:alpha(opacity=10); -moz-opacity:0.1; -khtml-opacity:0.1; position:absolute; top:0; left:0; z-index:2;}
+.poster-top .mask{ width:532px;}
+.poster-item-hover{ background:url(../../images/uCenter/postrt-hover.png) no-repeat top right;}
+.poster-item-br{ border-color:#cecece;}
+/* poster-det */
+.poster-hd{ padding-bottom:10px; overflow:hidden; _zoom:1;}
+.poster-hd .back{ float:right; color:#0088cc;}
+.poster-det{ padding:40px 40px 0; border:1px solid #e5e5e5; position:relative; _zoom:1;}
+.poster-det-page{ width:70px; height:33px; line-height:30px; text-align:center; background:url(../../images/uCenter/poster-bg1.png) no-repeat; color:#000; font-size:18px; position:absolute; top:40px; right:-41px;}
+.poster-det-page span{ padding:0 2px;}
+.poster-det-page .posDet-page-current{ color:#fff; font-family: Microsoft Yahei;}
+.poster-det-bar{ padding:15px 0; text-align: center;}
+.poster-det-bar span{ padding-left:20px; margin-right:10px; background:url(../../images/uCenter/poster-bg2.png) no-repeat left; color:#a5a5a5;}
+.poster-det-con{ width:690px; overflow:hidden; padding:0 34px 30px;}
+.poster-det-con h1{ line-height:40px; text-align: center; padding:10px 0 20px; background:url(../../images/uCenter/poster-brbg.png) repeat-x bottom; font-size:30px; font-family:Microsoft Yahei; border-top:3px solid #333; word-wrap: break-word;}
+.poster-det-con p{ font-size:14px; line-height:26px;}
+.poster-det-con img{ max-width:690px;}
+
+
+
+
+
+

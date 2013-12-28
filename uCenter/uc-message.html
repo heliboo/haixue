@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人中心-通知消息-嗨学网</title>
+<link href="../style/base.css" rel="stylesheet">
+<link href="../style/uCenter/uc-common2.css" rel="stylesheet">
+<link href="../style/uCenter/uc-message.css" rel="stylesheet">
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="../js/jquery.artDialog.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script> 
+<script type="text/javascript" src="../js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="../js/uc-common2.js"></script>
+<script type="text/javascript" src="../js/uc-exam.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".message-list li:even").addClass("odd");
+	$(".message-list li").hover(function(){
+		$(this).addClass("hover").find(".del-bar").show();
+	},function(){
+		$(this).removeClass("hover").find(".del-bar").hide();
+	});
+});
+</script>
+
+</head>
+
+<body>
+<!--uheader start-->
+<div class="uheader">
+    <div class="uheader-box">
+        <div class="logo"><a href="uc-friend2.html"><img src="../images/uCenter/ulogo2.png" alt="嗨学网"></a></div>
+		<div class="hnav-li hnav-course">
+			<a class="hnav-a" href="javascript:void(0)"><em>全部课程</em><span class="drop-ico"></span></a>
+			<div class="sdrop-box">
+				<ul class="all-course-list">
+					<li class="category1"><h3>建造学院</h3><div class="cItem"><a href="/jz">一级建造师</a><a href="/jz02">二级建造师</a><a href="/zjs">造价工程师</a><a href="/jl">监理工程师</a><a href="/aqgcs">安全工程师</a><a href="/wy">物业管理师</a></div></li>
+					<li class="category2"><h3>会计学院</h3><div class="cItem"><a href="/cpa">注册会计师</a><a href="/kjs">中级会计职称</a><a href="/zlkjs">初级会计职称</a><a href="/zs">注册税务师</a><a href="/kjz">会计资格证</a></div></li>
+					<li class="category3"><h3>继续教育学院</h3><div class="cItem"><a href="/zk">自考学历</a><a href="/jz01">专本学历</a><a href="/ky">研究生统一入学考试</a><a href="/ck">成考</a><a href="/gct">GCT</a></div></li>
+					<li class="category4"><h3>金融学院</h3><div class="cItem"><a href="/zq">证券从业</a><a href="/qh">期货从业</a><a href="/yh">银行从业</a></div></li>							
+					<li class="category5"><h3>法学院</h3><div class="cItem"><a href="/sf">司法考试</a><a href="/fl">企业法律顾问</a></div></li>
+					<li class="category6"><h3>IT学院</h3><div class="cItem"><a href="/it">悦成教育</a></div></li>
+					<li class="category7"><h3>其它</h3><div class="cItem"><a href="/rl">人力资源管理师</a><a href="/xl">心理咨询师</a><a href="/gwy">公务员</a><a href="/jjs">经济师</a><a href="/bg">报关员</a><a href="/yxs">网络营销师</a></div></li>
+				</ul>
+			</div>
+		</div>
+        <div class="search">
+            <input class="search-input" value="商品、问题、试题、试卷" name="" type="text">
+            <a href="uc-search.html" class="sarch-btn">搜 索</a>
+        </div>
+		<ul class="hnav">
+			<li class="hnav-li hnav-app">
+				<a class="hnav-a" href="uc-friend2.html"><em>首页</em></a>
+			</li>
+			<li class="hnav-li hnav-app">
+				<span class="mark">5</span>
+				<a class="hnav-a" href="#"><em>应用</em><span class="drop-ico"></span></a>
+				<div class="sdrop-box">
+					<ul class="sdrop-list">
+						<li class="sdrop-classmate"><a href="uc-friend.html">同学动态<em>(99+)</em></a></li>
+						<li class="sdrop-myhome"><a href="uc-timeline.html">我的主页</a></li>
+						<li class="sdrop-order"><a href="uc-order.html">订单管理<em>(1)</em></a></li>
+						<li class="sdrop-notice"><a href="uc-posterwall.html">公告资讯</a></li>
+						<li class="sdrop-test"><a href="uc-exam.html">习题练习</a></li>
+						<li class="sdrop-exam"><a href="uc-testPaper.html">考试中心</a></li>
+						<li class="sdrop-download last"><a href="uc-download.html">考前资料</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="hnav-li hnav-test"><a class="hnav-a" href="uc-exam.html"><em>题库</em></a></li>
+			<li class="hnav-li hnav-user">
+				<span class="mark">5</span>
+				<a class="hnav-a" href="uc-timeline.html"><span class="face"><img src="../img/user30-2.jpg" width="30" height="30" alt="" /></span><span class="drop-ico"></span></a>
+				<div class="sdrop-box">
+					<ul class="sdrop-list">
+						<li class="sdrop-set"><a href="uc-personSet.html">账号设置</a></li>
+						<li class="sdrop-invite"><a href="uc-myFriend.html">邀请好友</a></li>
+						<li class="sdrop-message"><a href="uc-message.html">消息通知<em>(5)</em></a></li>
+						<li class="sdrop-feedback"><a href="uc-feedback.html">意见反馈</a></li>
+						<li class="sdrop-help"><a href="../help/index.html">查看帮助</a></li>
+						<li class="sdrop-quit last"><a href="../index-new2.html">安全退出</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+    </div>
+</div>
+<!--uheader end-->
+
+<!--main start-->
+<div class="main">
+    <div class="side">
+        <ul class="nav">
+            <li><a href="uc-friend2.html"><i class="nav-icon nav-home"></i>首页</a></li>
+            <li><a href="uc-index2.html"><i class="nav-icon nav-class"></i>我的课程</a></li>
+            <li><a href="uc-myHome-vip.html" target="_blank"><i class="nav-icon nav-my"></i>我的主页</a></li>
+			<li><a href="uc-live.html" target="_blank"><i class="nav-icon nav-live"></i>直播公告</a></li>
+			<li><a href="uc-order.html"><i class="nav-icon nav-order"></i>订单管理<span class="nav-num"><em>15</em></span></a></li>
+			<li><a href="uc-posterwall.html"><i class="nav-icon nav-poster"></i>公告资讯</a></li>
+			<li><a href="uc-testPaper.html"><i class="nav-icon nav-testPaper"></i>考试中心</a></li>
+            <li><a href="uc-exam.html"><i class="nav-icon nav-exam"></i>习题练习</a></li>
+			<li><a href="uc-download.html" target="_blank"><i class="nav-icon nav-download"></i>考前资料</a></li>
+            <li id="J-secCourse"><a href="#"><i class="nav-icon nav-course"></i>选购课程</a>
+				<div style="position: absolute; top:-10px; left:80px; z-index: 10003; display:none;" class="popup">
+					<div class="popup-bg">
+						<div class="popup-outer">
+							<table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td>
+								<div class="popup-con" style="padding:5px 10px;">
+									<ul class="more-course">
+										<li><a href="#">一级建造师（建造工程）</a></li>
+										<li class="last"><a href="#">一级建造师（机电工程）</a></li>
+									</ul>
+								</div>
+							</td></tr></tbody></table>
+							<div class="popup-arrow popup-arrow-l"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+        </ul>
+    </div>
+    <div class="contenter">
+    	<div class="m-title"><h2>通知消息</h2></div>
+        <ul class="c-tab-nav">
+			<li><a class="current" href="#">全部消息</a></li>
+			<li><a href="#">我参与的</a></li>
+		</ul>
+		<div class="sel-box">
+			<span class="del-all"><a href="javascript:;"><span class="del-ico"></span>批量删除</a></span>
+			<span class="sel-all"><input type="checkbox"><label for="">全选 </label></span>
+		</div>
+		
+		<div class="message-con">
+			<ul class="message-list">
+				<li>亲爱的，<a class="name" href="uc-timeline.html">HAngel2008</a>，欢迎你加入嗨学网。学习是一种信仰。<span class="time">(4月15日 04:54)</span><span class="del-bar"><a href="#">删除</a> | <a href="#">不再提醒</a><span class="check"><input type="checkbox"></span></span></li>
+				<li>亲爱的，<a class="name" href="uc-timeline.html">HAngel2008</a>，你在<span class="do-txt">2013-03-07 14:20:20</span>下的订单<a href="uc-order.html">XXX4567412564</a>已经过期。<span class="time">(4月15日 04:54)</span><span class="del-bar"><a href="#">删除</a> | <a href="#">不再提醒</a><span class="check"><input type="checkbox"></span></span></li>
+				<li>你成功开通课程<a href="uc-course2.html" title="注册会计师精讲班">注册会计师精讲班</a>，有效期为<span>100</span>天<span class="time">(4月15日 04:54)</span><span class="del-bar"><a href="#">删除</a> | <a href="#">不再提醒</a><span class="check"><input type="checkbox"></span></span></li>
+				<li>你成功开通课程<a href="uc-course2.html" title="注册会计师精讲班">注册会计师精讲班</a>，有效期至<span>2013-06-07</span><span class="time">(4月15日 04:54)</span><span class="del-bar"><a href="#">删除</a> | <a href="#">不再提醒</a><span class="check"><input type="checkbox"></span></span></li>
+				<li>亲爱的，<a class="name" href="uc-timeline.html">HAngel2008</a>，你开通的课程<a href="uc-course2.html" title="注册会计师精讲班">注册会计师精讲班</a>，已经更新<a href="uc-video2.html" title="测试视频勿用">测试视频勿用</a>、<a href="uc-video2.html" title="测试视频勿用">测试视频勿用</a>、<a href="uc-video2.html" title="测试视频勿用">测试视频勿用</a>、<a href="uc-video2.html" title="测试视频勿用">测试视频勿用</a>、<a href="uc-video2.html" title="测试视频勿用">测试视频勿用</a><span class="time">(4月15日 04:54)</span><span class="del-bar"><a href="#">删除</a> | <a href="#">不再提醒</a><span class="check"><input type="checkbox"></span></span></li>
+				<li>你开通的课程<a href="uc-course2.html" title="注册会计师精讲班">注册会计师精讲班</a>已过期，请再次购买后学习！你的学习记录将会保留三个月。<span class="time">(4月15日 04:54)</span><span class="del-bar"><a href="#">删除</a> | <a href="#">不再提醒</a><span class="check"><input type="checkbox"></span></span></li>
+				<li><a class="name" href="uc-tofriend.html" title="111456@haixue.com">111...@haixue.com</a><span class="do-txt">关注了你</span><span class="time">(4月15日 04:54)</span><span class="del-bar"><a href="#">删除</a> | <a href="#">不再提醒</a><span class="check"><input type="checkbox"></span></span></li>
+				<li><a class="name" href="uc-tofriend.html" title="111456@haixue.com">111...@haixue.com</a><span class="do-txt">回答了你的问题：</span><a href="uc-question.html">萨菲为爱慰安妇位阿哥万丰奥威额外法王噶温热噶...</a><span class="time">(4月15日 04:54)</span><span class="del-bar"><a href="#">删除</a> | <a href="#">不再提醒</a><span class="check"><input type="checkbox"></span></span></li>
+				<li>你回答的问题：<a href="uc-question.html">萨菲为爱慰安妇位阿哥万丰奥威额外法王噶温热噶...</a><span class="do-txt">有了新答案。</span><span class="time">(4月15日 04:54)</span><span class="del-bar"><a href="#">删除</a> | <a href="#">不再提醒</a><span class="check"><input type="checkbox"></span></span></li>
+				<li>有人<a class="name" href="uc-tofriend.html" title="111456@haixue.com">111...@haixue.com</a><span class="do-txt">评论你</span><span class="time">(4月15日 04:54)</span><span class="del-bar"><a href="#">删除</a> | <a href="#">不再提醒</a><span class="check"><input type="checkbox"></span></span></li>
+				<li>你评论的内容<a href="#">萨菲为爱慰安妇位阿哥万丰奥威额外法王噶温热噶...</a><span class="do-txt">有了更新</span><span class="time">(4月15日 04:54)</span><span class="del-bar"><a href="#">删除</a> | <a href="#">不再提醒</a><span class="check"><input type="checkbox"></span></span></li>
+				<li>恭喜你，通过不懈的努力，你已经升到第<a class="fb" href="#">5</a>级。继续加油，学习是一种信仰。<span class="time">(4月15日 04:54)</span><span class="del-bar"><a href="#">删除</a> | <a href="#">不再提醒</a><span class="check"><input type="checkbox"></span></span></li>
+				<li>亲爱的，<a class="name" href="uc-timeline.html">HAngel2008</a>，在这个特别的日子里，嗨学网祝你天天快乐，学习更加勤奋。<span class="time">(4月15日 04:54)</span><span class="del-bar"><a href="#">删除</a> | <a href="#">不再提醒</a><span class="check"><input type="checkbox"></span></span></li>
+				<li>亲爱的，<a class="name" href="uc-timeline.html">HAngel2008</a>，你的积分<a href="uc-integral.html">500</a><span class="do-txt">即将在新一年中清零过期。</span><span class="time">(4月15日 04:54)</span><span class="del-bar"><a href="#">删除</a> | <a href="#">不再提醒</a><span class="check"><input type="checkbox"></span></span></li>
+				<li>亲爱的，<a class="name" href="uc-timeline.html">HAngel2008</a>，你发表的<a href="#">法轮功法轮功</a><span class="do-txt">因不符合嗨学网规定已经被删除。</span><span class="time">(4月15日 04:54)</span><span class="del-bar"><a href="#">删除</a> | <a href="#">不再提醒</a><span class="check"><input type="checkbox"></span></span></li>
+			</ul>
+			<!--start 分页-->
+			<div class="pager">
+				<div class="pager_con"><a class="disabled page-btn" href="#replyList">上一页</a><a class="current" href="#replyList">1</a><a href="#replyList">2</a><a href="#replyList">3</a><span class="separator">…&nbsp;</span><a href="#replyList">101</a><a href="#replyList">102</a><a class="page-btn" href="#replyList">下一页</a></div>
+			</div>
+			<!--end 分页-->
+			<div class="no-data"><em class="iconSigh-mid"></em>你还没消息</div>
+		</div>
+    </div>
+</div>
+<!--main end-->
+
+<!--footer start-->
+<div class="footer">
+	<div class="footer-box">
+        <div class="f-service"><a href="#">关于嗨学网</a> <span>|</span> <a href="#">官方微博</a> <span>|</span> <a href="#">联系我们</a> <span>|</span> <a href="#">给嗨学网留言</a></div>
+        <div class="f-info">京ICP备10217787&nbsp;&nbsp; 京公网安备110105012436&nbsp;&nbsp; copyright2010-2012 haixue.com</div>
+    </div>
+</div>
+<!--footer end-->
+</body>
+</html>
+

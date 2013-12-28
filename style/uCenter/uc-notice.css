@@ -1,0 +1,26 @@
+
+.notice-con{}
+/*公告详情页面*/
+.notice-text{border:1px solid #e5e5e5; padding:24px; margin-top:15px;}
+.notice-text h2{font-size: 24px; font-family: Microsoft Yahei; text-align: center; margin-top: 20px;}
+.notice-text h6{text-align: center; font-weight:100; color: #a5a5a5; margin-top:10px; margin-bottom: 35px; border-bottom:1px solid #e5e5e5; padding-bottom: 5px;}
+.notice-text p{text-indent: 2em; font-size: 16px; color: #666; padding:0px 20px 29px 20px; line-height:28px;}
+.notice-text img{margin: 0 auto; display: block;}
+.notice-bot{height:50px; padding: 10px 0px;}
+.notice-bot a{color: #0088ce;}
+.notice-bot .notice-bot-fl{float: left;}
+.notice-bot .notice-bot-fR{float: right;}
+
+.notice_ml20{margin-left: 20px;}
+.notice_fo{color:#ff7e00;}
+.notice-listFor{float: right; margin-top: -10px;}
+/*公告列表页面*/
+.notice-listPage{}
+.notice-listPage-ding{border:1px solid #e5e5e5; padding:10px 10px;}
+.notice-listPage-ding li{height:24px; padding-top: 6px; color: #a5a5a5; font-size: 14px;}
+.notice-listPage .answer-stick{ padding:1px 4px; margin-left:5px; background:#ff8a00; color:#fff; border-radius:3px; font-size: 12px;}
+.notice-time{float: right; font-size:12px; font-family: Arial, "MS Trebuchet", sans-serif;}
+.notice-type{padding: 0px 5px;}
+.notice-type a{color: #0088ce;}
+.notice-listPage-text{}
+.notice-listPage-text li{height:26px; padding: 8px 11px 0 10px; color: #a5a5a5; font-size: 14px; border-bottom:1px dashed #e5e5e5; background:url(../../images/uCenter/u-icon.png) no-repeat 0 -705px;}

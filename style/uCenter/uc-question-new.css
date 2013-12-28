@@ -1,0 +1,60 @@
+/* reset */
+.contenter{ width:980px; padding:0; background:none;}
+.main-con2{ width:680px;}
+.side-con2{ width:280px;}
+
+
+
+.qSide-tt{ height:38px; line-height:38px; font-size:16px; font-family:Microsoft Yahei;}
+.qSide-tt h2{ font-weight:500;}
+.new-q .bar{ margin-top:5px; text-align:right;}
+.new-q .bar .point{ padding:0 5px; font-weight:bold;}
+.new-q .bar a{ color:#a5a5a5;}
+.new-q .bar a:hover{ color:#0088cc;}
+
+/*qSid*/
+.qSide-con{ padding:15px 20px; background:#fff;}
+.sid-reg{ margin-bottom:20px;}
+.sid-reg .qSide-con{ padding:20px;}
+.sid-reg p{ line-height:20px; padding-bottom:15px; margin-bottom:15px; color:#a5a5a5; border-bottom:1px solid #e2e2e2;}
+.sid-reg .bar{ height:36px; line-height:36px; overflow:hidden;}
+.sid-reg .sid-qqreg{ float:right; font-weight:bold; color:#0088cc;} 
+.sid-reg .sid-qqreg em{ display:inline-block; width:15px; height:18px; margin:0 0 0 8px; background:url(../../images/uCenter/u-icon1.png) no-repeat -316px -50px; vertical-align:middle;}
+/*ask*/
+.ask-hd{ height:38px; line-height:38px; padding:0 20px; background:#0088cc; font-size:16px; font-family:Microsoft Yahei; color:#fff; position: relative;}
+.ask-hd h2{ font-weight:500;}
+.ask-hd .back{ color:#fff; font-size:12px; position:absolute; top:0; right:20px;}
+.ask-bd{ padding:20px; background:#fff; border:1px solid #e2e2e2;}
+.ask-inner{ padding:20px; background:#eff9fe;}
+.asker-box{ overflow:hidden; padding-bottom:20px; margin-bottom:20px; border-bottom:1px solid #ddd;}
+.asker-box dt{ width:50px; height:50px; overflow:hidden; float:left;}
+.asker-box dt img{ width:50px; height:50px; border-radius:5px;}
+.asker-box dd{ margin-left:60px;}
+.asker-box .ask-name{ font-weight:bold; color:#0088cc;}
+
+.ask-text{ font-weight:bold;}
+.ask-text-time{ margin-top:10px; text-align:right; font-size:14px; color:#a5a5a5;}
+.ask-box .add-ask .add-ask-time{ font-size:14px; color:#a5a5a5;}
+.ask-box .add-ask .add-ask-text{ border:none;}
+.add-ask-bar{ margin-top:-20px; color:#a5a5a5; position:relative;}
+.add-ask-bar a{ color:#a5a5a5;}
+.add-ask-bar a:hover{ color:#0088cc;}
+.add-ask-bar .v-line{ padding:0 10px;}
+.add-ask-bar .ask-share em{ display:inline-block; width:16px; height:16px; background:url(../../images/uCenter/u-icon1.png) no-repeat -317px -75px; vertical-align:middle;}
+
+.reply-editor{ margin:0;}
+.reply-newbtn{ float:right;}
+.reply-editor .textarea-box{ border:1px solid #e2e2e2;}
+.reply-editor .textarea-box textarea{ width:626px; border:none;}
+
+
+.reply-box{ border:none; border-radius:0;}
+.reply-hd{ height:38px; line-height:38px; padding:0 20px; background:#0088cc; font-size:16px; font-family:Microsoft Yahei; color:#fff; position: relative;}
+.reply-bd{ padding:5px 20px; background:#fff; border:1px solid #e2e2e2;}
+.reply-list{ padding:0;}
+
+
+
+
+
+

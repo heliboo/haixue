@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>天猫订单-嗨学网—远程网络职业教育领跑者</title>
+<meta name="keywords" content="HighSo嗨学网，一级建造师，二级建造师，注册会计师，会计证，会计职称，司法考试" />
+<meta name="description" content="嗨学网是中国最大的在线教育培训平台，提供的产品有一级建造师，二级建造师，注册会计师，会计证，会计职称，自考，司法考试等各类网上培训，以及海量题库，历年真题，模拟试题，名师直播，考前资料等学习辅助手段，还有标准化的课程体系，嗨学网已成为在线职业培训领域的引导者。" />
+<link href="style/base.css" rel="stylesheet" type="text/css" />
+<link href="style/common2.css" rel="stylesheet" type="text/css" />
+<link href="style/tmall-order.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+
+<body class="body-bg02">
+<!-- start header -->
+<div class="header">
+  <div class="header-box">
+    <div class="logo"><img src="images/new/logo.png" /></div>
+    <a href="#" class="ww-online">旺旺在线</a>
+  </div>
+</div>
+<!-- end header -->
+<!--main start-->
+<div class="tmain">
+	<div class="reg-con">
+        <div class="reg-con-left mt50">
+          <form action="" method="get"><fieldset class="reg">
+              <legend>天猫订单</legend>
+              <div class="reg-item">
+                <input type="text" class="txt-input tmall-icon01" value="请输入您在天猫的订单号">
+                <label class="valid"><em></em>请输入您在天猫的订单号</label>
+                <label class="error"><em></em>此订单号不存在</label>
+                <label class="txt-ok"><em></em></label>
+              </div>
+              <div class="reg-sub-btn"><a class="btn-big btn-blue" id="btn1" href="#">确 定</a></div>
+          </fieldset></form>
+        </div>
+	</div>
+</div>
+<div class="tmall-step"><img src="images/tmall-order/tmall-step01.png" /></div>
+<!--main end-->
+
+<!--footer start-->
+<div class="footer">
+    <div class="footer-box">
+        <div class="f-service"><a href="#">关于嗨学网</a> <span>|</span> <a href="#">官方微博</a> <span>|</span> <a href="#">联系我们</a> <span>|</span> <a href="#">给嗨学网留言</a></div>
+        <div class="f-info">京ICP备10217787&nbsp;&nbsp; 京公网安备110105012436&nbsp;&nbsp; copyright2010-2013 haixue.com</div>
+    </div>
+</div>
+<!--footer end-->
+
+<!--遮罩-->
+<div id="blackMask" class="black-mask"></div>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/swfobject-1.5.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.artDialog.js"></script>
+<!--<script type="text/javascript" src="js/common2.js"></script>-->
+<script type="text/javascript">
+$(document).ready(function() {
+//    alert("sdf");
+$("#btn1").click(function() {
+        $.dialog({title:false,content:'<h3 class="f14">此订单号不存在！</h3>',width:250,height:100,ok:true,icon:'warning'});
+		return false;
+    });
+});
+</script>
+</body>
+</html>

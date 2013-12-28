@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人中心-同学圈-嗨学网</title>
+<link href="../style/base.css" rel="stylesheet">
+<link href="../style/uCenter/uc-common2.css" rel="stylesheet">
+<link href="../style/uCenter/uc-QA.css" rel="stylesheet">
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/uc-common2.js"></script>
+<script type="text/javascript">
+//筛选条件切换
+$(document).ready(function() {
+	$("div.sift-con a").click(function() {
+		$(this).addClass("current").siblings("a").removeClass("current");
+		return false;
+	});
+	$("div.sec-menu0 a").click(function() {
+		$(this).addClass("current").siblings("a").removeClass("current");
+		return false;
+	});
+});
+//类别更多
+$(document).ready(function() {
+(function(){
+	var $siftInnerHeight=$(".sift-box .sift-inner").height();
+	if($siftInnerHeight<=27){
+		$(".sift-box .switch").hide();
+	}else{
+		$(".sift-box .switch").show();
+		$(".sift-box .switch").click(function() {
+			if($(".sift-box .sift-con").height()<=28){
+				$(this).addClass("off").removeClass("on");
+				$(".sift-box .sift-con").animate({height:$siftInnerHeight},200);
+			}else{
+				$(this).addClass("on").removeClass("off");
+				$(".sift-box .sift-con").animate({height:27},200);
+			}
+		});
+	};
+
+})();	
+});
+</script>
+</head>
+
+<body>
+<!--uheader start-->
+<div class="uheader">
+    <div class="uheader-box">
+        <div class="logo"><a href="uc-friend2.html"><img src="../images/uCenter/ulogo2.png" alt="嗨学网"></a></div>
+		<div class="hnav-li hnav-course">
+			<a class="hnav-a" href="javascript:void(0)"><em>全部课程</em><span class="drop-ico"></span></a>
+			<div class="sdrop-box">
+				<ul class="all-course-list">
+					<li class="category1"><h3>建造学院</h3><div class="cItem"><a href="/jz">一级建造师</a><a href="/jz02">二级建造师</a><a href="/zjs">造价工程师</a><a href="/jl">监理工程师</a><a href="/aqgcs">安全工程师</a><a href="/wy">物业管理师</a></div></li>
+					<li class="category2"><h3>会计学院</h3><div class="cItem"><a href="/cpa">注册会计师</a><a href="/kjs">中级会计职称</a><a href="/zlkjs">初级会计职称</a><a href="/zs">注册税务师</a><a href="/kjz">会计资格证</a></div></li>
+					<li class="category3"><h3>继续教育学院</h3><div class="cItem"><a href="/zk">自考学历</a><a href="/jz01">专本学历</a><a href="/ky">研究生统一入学考试</a><a href="/ck">成考</a><a href="/gct">GCT</a></div></li>
+					<li class="category4"><h3>金融学院</h3><div class="cItem"><a href="/zq">证券从业</a><a href="/qh">期货从业</a><a href="/yh">银行从业</a></div></li>							
+					<li class="category5"><h3>法学院</h3><div class="cItem"><a href="/sf">司法考试</a><a href="/fl">企业法律顾问</a></div></li>
+					<li class="category6"><h3>IT学院</h3><div class="cItem"><a href="/it">悦成教育</a></div></li>
+					<li class="category7"><h3>其它</h3><div class="cItem"><a href="/rl">人力资源管理师</a><a href="/xl">心理咨询师</a><a href="/gwy">公务员</a><a href="/jjs">经济师</a><a href="/bg">报关员</a><a href="/yxs">网络营销师</a></div></li>
+				</ul>
+			</div>
+		</div>
+        <div class="search">
+            <input class="search-input" value="商品、问题、试题、试卷" name="" type="text">
+            <a href="uc-search.html" class="sarch-btn">搜 索</a>
+        </div>
+		<ul class="hnav">
+			<li class="hnav-li hnav-app">
+				<a class="hnav-a" href="uc-friend2.html"><em>首页</em></a>
+			</li>
+			<li class="hnav-li hnav-app">
+				<span class="mark">5</span>
+				<a class="hnav-a" href="#"><em>应用</em><span class="drop-ico"></span></a>
+				<div class="sdrop-box">
+					<ul class="sdrop-list">
+						<li class="sdrop-classmate"><a href="uc-friend.html">同学动态<em>(99+)</em></a></li>
+						<li class="sdrop-myhome"><a href="uc-timeline.html">我的主页</a></li>
+						<li class="sdrop-order"><a href="uc-order.html">订单管理<em>(1)</em></a></li>
+						<li class="sdrop-notice"><a href="uc-posterwall.html">公告资讯</a></li>
+						<li class="sdrop-test"><a href="uc-exam.html">习题练习</a></li>
+						<li class="sdrop-exam"><a href="uc-testPaper.html">考试中心</a></li>
+						<li class="sdrop-download last"><a href="uc-download.html">考前资料</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="hnav-li hnav-test"><a class="hnav-a" href="uc-exam.html"><em>题库</em></a></li>
+			<li class="hnav-li hnav-user">
+				<span class="mark">5</span>
+				<a class="hnav-a" href="uc-timeline.html"><span class="face"><img src="../img/user30-2.jpg" width="30" height="30" alt="" /></span><span class="drop-ico"></span></a>
+				<div class="sdrop-box">
+					<ul class="sdrop-list">
+						<li class="sdrop-set"><a href="uc-personSet.html">账号设置</a></li>
+						<li class="sdrop-invite"><a href="uc-myFriend.html">邀请好友</a></li>
+						<li class="sdrop-message"><a href="uc-message.html">消息通知<em>(5)</em></a></li>
+						<li class="sdrop-feedback"><a href="uc-feedback.html">意见反馈</a></li>
+						<li class="sdrop-help"><a href="../help/index.html">查看帮助</a></li>
+						<li class="sdrop-quit last"><a href="../index-new2.html">安全退出</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+    </div>
+</div>
+<!--uheader end-->
+
+<!--main start-->
+<div class="main">
+    <div class="contenter">
+    	<div class="main-con">
+            <div class="sec-menu0">
+                <a class="current" href="#">全部问答</a>
+                <a href="#">按提问时间</a>
+				<a href="#">按回答人数</a>
+            </div>
+            <div class="sift-box">
+                <div class="sift-con"><div class="sift-inner"><a class="current" href="#">全部</a> <span>|</span> <a href="#">一级建造师</a> <span>|</span> <a href="#">二级建造师</a> <span>|</span> <a href="#">一级建造师</a> <span>|</span> <a href="#">一级建造师</a> <span>|</span> <a href="#">二级建造师</a> <span>|</span> <a href="#">一级建造师</a> <span>|</span> <a href="#">一级建造师</a> <span>|</span> <a href="#">二级建造师</a> <span>|</span> <a href="#">一级建造师</a> <span>|</span></div></div>
+				<a class="switch on" href="#">更多</a>
+            </div>
+            <div class="trends">
+				<div class="no-data"><em class="iconSigh-mid"></em>还没有人提问</div>
+            	<dl class="hi-box">
+                	<dt class="hi-pic">
+                        <a href="uc-tofriend.html" title="快乐天使"><img src="../img/uCenter/user50-1.jpg" width="50" height="50" alt="" /></a>
+                        <a href="#" class="addAtten"><span class="icon-addAtten">+</span>关注</a>
+                    </dt>
+                    <dd>
+                    	<div class="hi-info">
+                            <a class="hi-name" href="uc-tofriend.html">快乐天使</a>
+                            <span title="VIP" class="approve"></span>
+                            <span class="hi-action">提了问题</span>
+                            <span class="hi-time">5分钟前</span>
+                        </div>
+                        <div class="hi-text"><a href="uc-question.html">中级会计师考前资料发了没？我怎么没有收到呢？发现这个微博很不错，台词都很经典推荐大家关注,转发活动贴就有机会赢无线充电器。</a></div>
+                        <ul class="hi-img-list">
+                        	<li><a href="uc-question.html"><img src="../img/uCenter/v-img1.jpg" /></a></li>
+                        </ul>
+                        <div class="hi-from">
+                        	<div class="hi-arrow"></div>
+                            <div class="hi-from-text"><span class="v-icon"></span><strong>来自视频：</strong><a href="uc-video2.html">财经法规与会计职业道德-基础精讲班经法规与会计职业道德</a></div>
+                            <div class="hi-from-bar"><span class="viewVideo-icon"><a href="uc-video2.html">查看此视频</a></span> <span class="answer-icon"><a href="uc-video2.html">25条问题</a></span></div>
+                        </div>
+                        <div class="hi-bar"><span class="view-icon"><a href="uc-question.html">查看此问题</a></span> <span class="reply-icon"><a href="uc-question.html">回答此问题</a></span> <span class="answer-icon"><a href="uc-question.html">7条回答</a></span></div>
+                    </dd>
+                </dl>
+                
+                <dl class="hi-box">
+                	<dt class="hi-pic">
+                        <a href="uc-tofriend.html" title="快乐天使"><img src="../images/uCenter/user-pic50x50.jpg" width="50" height="50" alt="" /></a>
+                    </dt>
+                    <dd>
+                    	<div class="hi-info">
+                            <a class="hi-name" href="uc-tofriend.html">快乐天使</a>
+                            <span title="VIP" class="approve"></span>
+                            <span class="hi-action">回答了问题</span>
+                            <span class="hi-time">5分钟前</span>
+                        </div>
+                        <div class="hi-text"><a href="uc-question.html">中级会计师考前资料发了没？我怎么没有收到呢？发现这个微博很不错</a></div>
+                        <div class="hi-from">
+                        	<div class="hi-arrow"></div>
+                            <div class="hi-from-info">来自<a class="hi-name" href="uc-tofriend.html">Angell</a><span title="VIP" class="approve"></span><span class="hi-action">的提问</span><span class="hi-time">25分钟前</span></div>
+                            <div class="hi-from-text"><span class="q-icon"></span><a href="uc-question.html">您好，考前资料还没出来，是在考前的天发送至学员的注册邮箱中，如果您没有收到可以致电：4007-062-061 进行咨询 或留言提供注册手机及可以收到邮件的邮箱进行索取也有可能直接上传到您的个人中心后需要您自行下载，因为不同的课程发送考前资料的方式不一样。感谢您对嗨学网的关注，供注册手机及可以收到祝您学习愉快，留言提供注册手机及可以收到邮件的邮！</a></div>
+                            <div class="hi-from-bar"><span class="view-icon"><a href="uc-question.html">查看此问题</a></span> <span class="reply-icon"><a href="uc-question.html">回答此问题</a></span> <span class="answer-icon"><a href="uc-video2.html">25条问题</a></span></div>
+                        </div>
+                        <div class="hi-bar"><span class="support-icon"><a href="#">满意789</a></span> <span class="against-icon"><a href="#">不满意87</a></span></div>
+                    </dd>
+                </dl>
+            	<div class="load-more"><a href="#">点击加载更多</a></div>
+            </div>
+        </div>
+        <div class="side-con">
+			<div class="QA-count">
+				<div class="q-total">问题总数：<em>556</em></div>
+				<div class="myQ-total"><a href="#">我的回答<em>10</em></a></div>
+				<div class="myIntegral-total"><a href="#">我的积分<em>30</em></a></div>
+			</div>
+			<div class="myAnswer">
+				<h3>我的问题</h3>
+				<a class="more" href="#">全部&gt;&gt;</a>
+				<div class="myAnswer-con">
+					<ul class="myAnswer-list">
+						<li><p><a href="#">我想问一下，2013年实务的相关课程，都上传完了吗？</a></p><div class="bar"><a href="#">5条回答</a></div></li>
+						<li><p><a href="#">我想问一下，2013年实务的相关课程，都上传完了吗？</a></p><div class="bar"><a href="#">5条回答</a></div></li>
+						<li><p><a href="#">我想问一下，2013年实务的相关课程，都上传完了吗？</a></p><div class="bar"><a href="#">5条回答</a></div></li>
+						<li><p><a href="#">我想问一下，2013年实务的相关课程，都上传完了吗？</a></p><div class="bar"><a href="#">5条回答</a></div></li>
+						<li><p><a href="#">我想问一下，2013年实务的相关课程，都上传完了吗？</a></p><div class="bar"><a href="#">5条回答</a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div class="QA-guide">
+				<h3>问题指南</h3>
+				<div class="QA-guide-con">
+					<ul class="QA-guide-list">
+						<li>
+							<div class="q"><em>Q</em><span>：</span><p>是谁来回答我提的问题呢？</p></div>
+							<div class="a"><em>A</em><span>：</span><p>嗨学网官方会在24小时内回答你，此外其他任何一位学员都可以回答你提的问题！</p></div>
+						</li>
+						<li>
+							<div class="q"><em>Q</em><span>：</span><p>我回答别人的问题可以得到什么？</p></div>
+							<div class="a"><em>A</em><span>：</span><p>回答一次可得到2积分，若此回答被采纳为指定答案可获得勋章奖励！</p></div>
+						</li>
+						<li>
+							<div class="q"><em>Q</em><span>：</span><p>嗨学网积分有什么作用？</p></div>
+							<div class="a"><em>A</em><span>：</span><p>可兑换模拟试卷、优惠券等！</p></div>
+						</li>
+						<li>
+							<div class="q"><em>Q</em><span>：</span><p>在嗨学网如何获得更多的粉丝？</p></div>
+							<div class="a"><em>A</em><span>：</span><p>经常回答其他同学提问的问题，获得被推荐到首页右侧的机会！</p></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+        </div>
+    </div>
+</div>
+<!--main end-->
+
+<!--footer start-->
+<div class="footer">
+	<div class="footer-box">
+        <div class="f-service"><a href="#">关于嗨学网</a> <span>|</span> <a href="#">官方微博</a> <span>|</span> <a href="#">联系我们</a> <span>|</span> <a href="#">给嗨学网留言</a></div>
+        <div class="f-info">京ICP备10217787&nbsp;&nbsp; 京公网安备110105012436&nbsp;&nbsp; copyright2010-2012 haixue.com</div>
+    </div>
+</div>
+<!--footer end-->
+
+<div class="popup" style=" display:none; position:absolute; top:220px; left:180px; z-index: 10003;">
+    <div class="popup-bg">
+        <div class="popup-outer">
+            <table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td>
+                <div class="popup-con">
+                    <div class="user-card">
+                        <dl class="user-card-info">
+                            <dt><a href="uc-tofriend.html" title=""><img src="../img/uCenter/user50-1.jpg" width="50" height="50" alt="" /></a></dt>
+                            <dd>
+                                <div class="name">
+                                    <a class="hi-name" href="uc-tofriend.html">快乐天使</a>
+                                    <span title="VIP" class="approve"></span>
+                                    <span class="female-icon">女</span><span class="v-line"> | </span>
+                                    <span class="">北京 东城区</span>
+                                </div>
+                                <div class="count"><span>关注<a href="uc-tofriend.html">1245</a></span><span class="v-line"> | </span><span>粉丝<a href="uc-tofriend.html">1245</a></span><span class="v-line"> | </span><span>问题<a href="#">1245</a></span></div>
+                                <div class="major"><span class="s-major">造价工程师</span> <span class="s-major">监理工程师</span></div>
+                                <div class="s-progress">
+                                    <div class="s-progressbar"><div style="width:38%;" class="s-progressbar-value"></div></div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <p class="sign">个性签名：每一首歌都是全世界的音乐传奇，经典中的经典这些歌唱出现在世界各地不论是、还是乡村的小广播里。</p>
+                        <!--互相关注-->
+                        <div class="user-card-atten"><div class="per-atten-bar"><span class="atten0-icon">互相关注</span> <span class="v-line">|</span> <a class="del" href="#">取消</a></div></div>
+                        <!--已关注-->
+                        <div class="user-card-atten"><div class="per-atten-bar"><span class="atten1-icon">已关注</span> <span class="v-line">|</span> <a class="del" href="#">取消</a></div></div>
+                        <!--未关注-->
+                        <div class="user-card-atten"><a class="addAtten" href="#"><span class="icon-addAtten">+</span>关注</a></div>
+                    </div>
+                </div>
+            </td></tr></tbody></table>
+            <div class="popup-arrow popup-arrow-l"></div>
+        </div>
+    </div>
+</div>
+<!--gotoTop start-->
+<div class="goto_top"><a href="#">返回顶部</a></div>
+<!--gotoTop end-->
+</body>
+</html>

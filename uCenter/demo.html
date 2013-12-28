@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>demo-个人中心-嗨学网</title>
+<link href="../style/base.css" rel="stylesheet">
+<link href="../style/uCenter/uc-common.css" rel="stylesheet">
+<link href="../style/uCenter/uc-home.css" rel="stylesheet">
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="../js/jquery.artDialog.js"></script>
+<script type="text/javascript" src="../js/uc-common.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	function onAfter(curr, next, opts) {
+		var index = opts.currSlide;
+		$('#medalPrev')[index == 0 ? 'hide' : 'show']();
+		$('#medalNext')[index == opts.slideCount - 1 ? 'hide' : 'show']();
+	}
+
+    $('#userMedalBox').cycle({ 
+		fx:     'scrollHorz', 
+		prev:   '#medalPrev', 
+		next:   '#medalNext', 
+		after:   onAfter,
+		timeout: 0 
+	});
+});
+
+$(document).ready(function() {
+    $("#userPic").hover(function(){
+		$(this).find(".user-pic-set").show();
+		$(this).find(".user-mask").show();
+	},function(){
+		$(this).find(".user-pic-set").hide();
+		$(this).find(".user-mask").hide();
+	});
+	
+	$("#cmClose").bind("click",function(){
+		$("#courseMessage").hide();
+	});
+	
+	$(".sfun").hover(function(){
+		$(this).find(".del").show();
+	},function(){
+		$(this).find(".del").hide();
+	});
+});
+//考试时间切换 
+$(document).ready(function() {
+    $('#examTimeSlide').cycle({ 
+		fx:     'scrollUp', 
+		prev:   '#timePrev', 
+		next:   '#timeNext', 
+		timeout: 0 
+	});
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $.dialog({title:'免费课程选择',content:'<p class="fb mb5">您确定选择该课程？</p><p class="color_orange">您只能选择2门免费课程，选择后不能修改。</p>',width:350,height:140,padding:'10px 20px 0 0',icon:'question',ok:true,cancel:true});
+	 $.dialog({title:'完成免费课程选择',content:'<p class="fb mb5">你已经选择了两门免费课程，确定完成选择行为吗？</p><p class="color_orange">选择后不可更改。点确定完成选择行为，点击取消重新选择。</p>',width:350,height:140,padding:'10px 20px 0 0',icon:'question',ok:true,cancel:true});
+	 $.dialog({title:'取消关注',content:'确认要取消对“司法所地方”的关注吗?',width:350,height:140,padding:'0px 20px 0 0',icon:'question',ok:true,cancel:true});
+});
+</script>
+</head>
+
+<body>
+<!--utop start-->
+<div class="utop">
+	<div class="utop-box">
+    	<div class="welcome">您好，tendergrass！<a href="#">[退出]</a></div>
+        <div class="top-info"><span class="top-order"><a href="#">订单<em>(15)</em></a></span></div>
+        <ul class="menu">
+        	<li><a href="#">全部课程</a></li>
+            <li class="last"><a href="#">查看帮助</a></li>
+        </ul>
+    </div>
+</div>
+<!--utop end-->
+
+<!--uheader start-->
+<div class="uheader">
+    <div class="uheader-box">
+    	<div class="logo"><a href="#"><img src="../images/uCenter/ulogo.png" alt="嗨学网"></a></div>
+        <div class="search">
+        	<input class="search-input" name="" type="text">
+            <button class="sarch-btn" type="submit">搜 索</button>
+        </div>
+    </div>
+</div>
+<!--uheader end-->
+
+<!--main start-->
+<div class="main">
+	<div class="side">
+    	<ul class="nav">
+        	<li><a class="current" href="#"><i class="nav-icon nav-home"></i>首页</a></li>
+            <li><a href="#"><i class="nav-icon nav-friend"></i>同学圈</a></li>
+            <li><a href="#"><i class="nav-icon nav-my"></i>我的主页</a></li>
+            <li><a href="#"><i class="nav-icon nav-other"></i>我的主页</a></li>
+        </ul>
+    </div>
+    <div class="contenter">
+    	<!--start 头像名片-->
+    	<div class="user-card">
+        	<dl class="user-card-info">
+            	<dt><a href="#"><img src="../img/uCenter/user50-1.jpg" width="50" height="50" alt="" title="" /></a></dt>
+                <dd>
+                	<div class="name">
+                        <a class="hi-name" href="#">快乐天使</a>
+                        <a href="#"><span title="认证" class="approve"></span></a>
+                        <span class="female-icon">女</span><span class="v-line"> | </span>
+                        <span class="">北京 东城区</span>
+                    </div>
+                    <div class="count"><span>关注<a href="#">1245</a></span><span class="v-line"> | </span><span>粉丝<a href="#">1245</a></span><span class="v-line"> | </span><span>问题<a href="#">1245</a></span></div>
+                    <div class="major"><span class="s-major">造价工程师</span> <span class="s-major">监理工程师</span></div>
+                    <div class="s-progress">
+                        <div class="s-progressbar"><div style="width:38%;" class="s-progressbar-value"></div></div>
+                    </div>
+                </dd>
+            </dl>
+            <p class="sign">个性签名：每一首歌都是全世界的音乐传奇，经典中的经典这些歌唱出现在世界各地不论是、还是乡村的小广播里。</p>
+            <!--互相关注-->
+            <div class="user-card-atten"><div class="per-atten-bar"><span class="atten0-icon">互相关注</span> <span class="v-line">|</span> <a class="del" href="#">取消</a></div></div>
+            <!--已关注-->
+            <div class="user-card-atten"><div class="per-atten-bar"><span class="atten1-icon">已关注</span> <span class="v-line">|</span> <a class="del" href="#">取消</a></div></div>
+            <!--未关注-->
+            <div class="user-card-atten"><a class="btn-small btn-gray" href="#">关注</a></div>
+        </div>
+        <!--end 头像名片-->
+        <!--start 等级弹出-->
+        <div class="level-card">
+        	<div class="level-progress">
+            	<div class="prev-level">LV7</div>
+                <div class="level-progress-box">
+                	<div class="level-progressbar"><div style="width:38%;" class="level-progressbar-value"></div></div>
+                </div>
+                <div class="prev-level">LV8</div>
+            </div>
+            <div class="text">尘世迷茫小书童</div>
+        </div>
+        <!--end 等级弹出-->
+        <!--取消订单-->
+        <div class="demo-con">
+        	<p class="mb5 f14">您确定要取消订单么？取消订单后，不能回复。</p>
+            <p class="f14">请选择取消订单的理由：</p>
+            <ul class="reason-list">
+            	<li><input name="" type="radio" value=""><label>我不想买了</label></li>
+                <li><input name="" type="radio" value=""><label>错误或重复下单</label></li>
+                <li><input name="" type="radio" value=""><label>更换货添加新商品</label></li>
+                <li><input name="" type="radio" value=""><label>支付不成功</label></li>
+                <li><input name="" type="radio" value=""><label>商品价格太贵</label></li>
+                <li><input name="" type="radio" value=""><label>其它原因</label></li>
+            </ul>
+        </div>
+        <!--确认收货-->
+        <div class="demo-con">
+            <form class="uc-form">
+            <p class="mb5 f14">请输入您收到的订单激活码：</p>
+            <input class="text-input" name="" type="text" value="">
+            </form>
+        </div>
+        <!--就此提问-->
+        <div class="demo-con">
+            <div class="q-pop">
+                <div class="q-con">
+                    <div class="q-item">
+                        <label>问题类型：</label>
+                        <select class="sec-input" name="">
+                            <option>知识问题</option>
+                            <option>视频问题</option>
+                            <option>服务问题</option>
+                            <option>其它问题</option>
+                        </select>
+                    </div>
+                    <div class="q-item">
+                        <label>问题内容：</label>
+                        <textarea class="q-textarea" name="" cols="" rows=""></textarea>
+                    </div>
+                    <div class="q-bar">
+                        <div class="reply-tool"><a class="rePicTool-icon" href="#">图片</a> <a class="reVideoTool-icon" href="#">视频</a> <a class="reMathTool-icon" href="#">公式</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--发表评论-->
+        <div class="demo-con">
+            <div class="q-box">
+                <div class="q-con">
+                    <div class="q-item">
+                        <label>顺便说2句：</label>
+                        <textarea class="q-textarea" name="" cols="" rows=""></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+<!--main end-->
+
+<!--footer start-->
+<div class="footer">
+	<div class="footer-box">
+        <div class="f-service"><a href="#">关于嗨学网</a> <span>|</span> <a href="#">官方微博</a> <span>|</span> <a href="#">联系我们</a> <span>|</span> <a href="#">给嗨学网留言</a></div>
+        <div class="f-info">京ICP备10217787&nbsp;&nbsp; 京公网安备110105012436&nbsp;&nbsp; copyright2010-2012 haixue.com</div>
+    </div>
+</div>
+<!--footer end-->
+<div class="popup" style="position:absolute; top:100px; left:400px; z-index: 10003;">
+    <div class="popup-bg">
+        <div class="popup-outer">
+            <table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td>
+                <div class="popup-con">
+                    <div class="user-card">
+                        <dl class="user-card-info">
+                            <dt><a href="#"><img src="../img/uCenter/user50-1.jpg" width="50" height="50" alt="" title="" /></a></dt>
+                            <dd>
+                                <div class="name">
+                                    <a class="hi-name" href="#">快乐天使</a>
+                                    <a href="#"><span title="认证" class="approve"></span></a>
+                                    <span class="female-icon">女</span><span class="v-line"> | </span>
+                                    <span class="">北京 东城区</span>
+                                </div>
+                                <div class="count"><span>关注<a href="#">1245</a></span><span class="v-line"> | </span><span>粉丝<a href="#">1245</a></span><span class="v-line"> | </span><span>问题<a href="#">1245</a></span></div>
+                                <div class="major"><span class="s-major">造价工程师</span> <span class="s-major">监理工程师</span></div>
+                                <div class="s-progress">
+                                    <div class="s-progressbar"><div style="width:38%;" class="s-progressbar-value"></div></div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <p class="sign">个性签名：每一首歌都是全世界的音乐传奇，经典中的经典这些歌唱出现在世界各地不论是、还是乡村的小广播里。</p>
+                        <!--互相关注-->
+                        <div class="user-card-atten"><div class="per-atten-bar"><span class="atten0-icon">互相关注</span> <span class="v-line">|</span> <a class="del" href="#">取消</a></div></div>
+                        <!--已关注-->
+                        <div class="user-card-atten"><div class="per-atten-bar"><span class="atten1-icon">已关注</span> <span class="v-line">|</span> <a class="del" href="#">取消</a></div></div>
+                        <!--未关注-->
+                        <div class="user-card-atten"><a class="btn-small btn-gray" href="#">关注</a></div>
+                    </div>
+                </div>
+            </td></tr></tbody></table>
+            <div class="popup-arrow popup-arrow-l"></div>
+        </div>
+    </div>
+</div>
+<div class="popup" style="position:absolute; top:400px; left:400px; z-index: 10003;">
+    <div class="popup-bg">
+        <div class="popup-outer">
+            <table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td>
+                <div class="popup-con">
+                    <div class="level-card">
+                        <div class="level-progress">
+                            <div class="prev-level">LV7</div>
+                            <div class="level-progress-box">
+                                <div class="level-progressbar"><div style="width:38%;" class="level-progressbar-value"></div></div>
+                            </div>
+                            <div class="prev-level">LV8</div>
+                        </div>
+                        <div class="text">尘世迷茫小书童</div>
+                    </div>
+                </div>
+            </td></tr></tbody></table>
+            <div class="popup-arrow popup-arrow-t"></div>
+        </div>
+    </div>
+</div>
+<!--关注成功-->
+<div class="popup" style="position:absolute; top:600px; left:570px; z-index: 10003;">
+    <div class="popup-bg">
+        <div class="popup-outer">
+            <table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td>
+                <div class="popup-con">
+                    <p class="fb"><span class="popun-icon popun-icon-ok"></span>关注成功!</p>
+                </div>
+            </td></tr></tbody></table>
+        </div>
+    </div>
+</div>
+<!--关注成功-->
+<div class="popup" style="position:absolute; top:800px; left:570px; z-index: 10003;">
+    <div class="popup-bg">
+        <div class="popup-outer">
+            <table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td>
+                <div class="popup-con">
+                    <p class="fb"><span class="popun-icon popun-icon-error"></span>关注失败!</p>
+                    <p class="ml30">您最多只能关注<em class="color_orange">100</em>人</p>
+                    <p class="pl30 mt10"><a class="btn-small btn-blue" href="#">确定</a></p>
+                </div>
+            </td></tr></tbody></table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

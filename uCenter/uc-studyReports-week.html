@@ -1,0 +1,347 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的周学习报告-嗨学网</title>
+<link href="../style/base.css" rel="stylesheet">
+<link href="../style/uCenter/uc-common2.css" rel="stylesheet">
+<link href="../style/uCenter/uc-studyReports.css" rel="stylesheet">
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="../js/uc-common2.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#J-select-week").toggle(
+		function(){
+			$(this).find("ul").slideDown();
+		},
+		function(){
+			$(this).find("ul").slideUp();
+		}
+	);
+	if($("#J-select-week ul").height()>300){
+		$("#J-select-week ul").addClass("over");
+	}
+});
+$(document).ready(function() {
+	$("#J-shareClassmate").click(function() {
+		$("#J-classMatePop").show();
+	});
+	
+});
+function closePop(a){
+		$(a).parents(".popup").hide();
+	};
+</script>
+</head>
+
+<body>
+<!--uheader start-->
+<div class="uheader">
+    <div class="uheader-box">
+        <div class="logo"><a href="uc-friend2.html"><img src="../images/uCenter/ulogo2.png" alt="嗨学网"></a></div>
+		<div class="hnav-li hnav-course">
+			<a class="hnav-a" href="javascript:void(0)"><em>全部课程</em><span class="drop-ico"></span></a>
+			<div class="sdrop-box">
+				<ul class="all-course-list">
+					<li class="category1"><h3>建造学院</h3><div class="cItem"><a href="/jz">一级建造师</a><a href="/jz02">二级建造师</a><a href="/zjs">造价工程师</a><a href="/jl">监理工程师</a><a href="/aqgcs">安全工程师</a><a href="/wy">物业管理师</a></div></li>
+					<li class="category2"><h3>会计学院</h3><div class="cItem"><a href="/cpa">注册会计师</a><a href="/kjs">中级会计职称</a><a href="/zlkjs">初级会计职称</a><a href="/zs">注册税务师</a><a href="/kjz">会计资格证</a></div></li>
+					<li class="category3"><h3>继续教育学院</h3><div class="cItem"><a href="/zk">自考学历</a><a href="/jz01">专本学历</a><a href="/ky">研究生统一入学考试</a><a href="/ck">成考</a><a href="/gct">GCT</a></div></li>
+					<li class="category4"><h3>金融学院</h3><div class="cItem"><a href="/zq">证券从业</a><a href="/qh">期货从业</a><a href="/yh">银行从业</a></div></li>							
+					<li class="category5"><h3>法学院</h3><div class="cItem"><a href="/sf">司法考试</a><a href="/fl">企业法律顾问</a></div></li>
+					<li class="category6"><h3>IT学院</h3><div class="cItem"><a href="/it">悦成教育</a></div></li>
+					<li class="category7"><h3>其它</h3><div class="cItem"><a href="/rl">人力资源管理师</a><a href="/xl">心理咨询师</a><a href="/gwy">公务员</a><a href="/jjs">经济师</a><a href="/bg">报关员</a><a href="/yxs">网络营销师</a></div></li>
+				</ul>
+			</div>
+		</div>
+        <div class="search">
+            <input class="search-input" value="商品、问题、试题、试卷" name="" type="text">
+            <a href="uc-search.html" class="sarch-btn">搜 索</a>
+        </div>
+		<ul class="hnav">
+			<li class="hnav-li hnav-app">
+				<a class="hnav-a" href="uc-friend2.html"><em>首页</em></a>
+			</li>
+			<li class="hnav-li hnav-app">
+				<span class="mark">5</span>
+				<a class="hnav-a" href="#"><em>应用</em><span class="drop-ico"></span></a>
+				<div class="sdrop-box">
+					<ul class="sdrop-list">
+						<li class="sdrop-classmate"><a href="uc-friend.html">同学动态<em>(99+)</em></a></li>
+						<li class="sdrop-myhome"><a href="uc-timeline.html">我的主页</a></li>
+						<li class="sdrop-order"><a href="uc-order.html">订单管理<em>(1)</em></a></li>
+						<li class="sdrop-notice"><a href="uc-posterwall.html">公告资讯</a></li>
+						<li class="sdrop-test"><a href="uc-exam.html">习题练习</a></li>
+						<li class="sdrop-exam"><a href="uc-testPaper.html">考试中心</a></li>
+						<li class="sdrop-download last"><a href="uc-download.html">考前资料</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="hnav-li hnav-test"><a class="hnav-a" href="uc-exam.html"><em>题库</em></a></li>
+			<li class="hnav-li hnav-user">
+				<span class="mark">5</span>
+				<a class="hnav-a" href="uc-timeline.html"><span class="face"><img src="../img/user30-2.jpg" width="30" height="30" alt="" /></span><span class="drop-ico"></span></a>
+				<div class="sdrop-box">
+					<ul class="sdrop-list">
+						<li class="sdrop-set"><a href="uc-personSet.html">账号设置</a></li>
+						<li class="sdrop-invite"><a href="uc-myFriend.html">邀请好友</a></li>
+						<li class="sdrop-message"><a href="uc-message.html">消息通知<em>(5)</em></a></li>
+						<li class="sdrop-feedback"><a href="uc-feedback.html">意见反馈</a></li>
+						<li class="sdrop-help"><a href="../help/index.html">查看帮助</a></li>
+						<li class="sdrop-quit last"><a href="../index-new2.html">安全退出</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+    </div>
+</div>
+<!--uheader end-->
+
+<!--main start-->
+<div class="main">
+	<div class="sr-header">
+		<h1>我的周学习报告-只有学习才能让生活充实和有价值</h1>
+		<div class="sr-cycle-box">
+			<div id="J-select-week" class="sr-cycle">
+				<div class="current-date">4月08日-4月14日</div>
+				<ul>
+					<li><a href="">4月08日-4月14日</a></li>
+					<li><a href="">4月15日-4月21日</a></li>
+					<li><a href="">4月22日-4月28日</a></li>
+					<li><a href="">4月29日-5月05日</a></li>
+					<li><a href="">5月06日-5月12日</a></li>
+					<li><a href="">4月08日-4月14日</a></li>
+					<li><a href="">4月15日-4月21日</a></li>
+					<li><a href="">4月22日-4月28日</a></li>
+					<li><a href="">4月29日-5月05日</a></li>
+					<li><a href="">5月06日-5月12日</a></li>
+					<li><a href="">4月08日-4月14日</a></li>
+					<li><a href="">4月15日-4月21日</a></li>
+					<li><a href="">4月22日-4月28日</a></li>
+					<li><a href="">4月29日-5月05日</a></li>
+					<li><a href="">5月06日-5月12日</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="sr-container">
+		<div class="sr-container-top"></div>
+		<div class="sr-info clear-fix">
+			<div class="sr-info-item sr-info-log">
+				<h4>登录次数</h4>
+				<div class="count">
+					<span class="number">19</span>
+					<span class="unit">次</span>
+					<p class="supplement"></p>
+				</div>
+			</div>
+			<div class="sr-info-item sr-info-watch">
+				<h4>看课时间</h4>
+				<div class="count">
+					<span class="number">267</span>
+					<span class="unit">分钟</span>
+					<p class="supplement">（22小时）</p>
+				</div>
+			</div>
+			<div class="sr-info-item sr-info-test">
+				<h4>做题量</h4>
+				<div class="count">
+					<span class="number">68</span>
+					<span class="unit">道</span>
+					<p class="supplement">（不包括试卷哦）</p>
+				</div>
+			</div>
+			<div class="sr-info-item sr-info-question">
+				<h4>问题数</h4>
+				<div class="count">
+					<span class="number">32</span>
+					<span class="unit">次</span>
+					<p class="supplement"></p>
+				</div>
+			</div>
+			<div class="sr-info-item sr-info-friend">
+				<h4>好友数</h4>
+				<div class="count">
+					<span class="number">179</span>
+					<span class="unit">人</span>
+					<p class="supplement"></p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="srItem-list clear-fix">
+			<div class="srItem-list-left">
+				<div class="sr-item sr-item-watch">
+					<div class="sr-item-inner">
+						<div class="title"><h3>我这周的看课时间走向</h3></div>
+						<div class="sr-item-con">
+							<div class="sr-watch-chart">
+							<img src="../img/uCenter/sr-watch-chart.png" width="553" height="233">
+<!--<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="554" height="215" style="overflow:hidden; position:relative;">
+									<desc>Created with Raphaël 2.1.0</desc>
+									<path style="" fill="none" stroke="#9fddf9" d="M 40 162 L 120 62" stroke-width="2px"/>
+									<path style="" fill="none" stroke="#9fddf9" d="M 120 62 L 200 100" stroke-width="2px"/>
+									<path style="" fill="none" stroke="#9fddf9" d="M 200 100 L 280 162" stroke-width="2px"/>
+									<path style="" fill="none" stroke="#9fddf9" d="M 280 162 L 360 162" stroke-width="2px"/>
+									<path style="" fill="none" stroke="#9fddf9" d="M 360 162 L 440 162" stroke-width="2px"/>
+									<path style="" fill="none" stroke="#9fddf9" d="M 440 162 L 520 162" stroke-width="2px"/>
+									
+									<circle cx="40" cy="162" r="8" fill="#1b74bd" stroke="none" style="cursor: pointer;" stroke-width="0"/>
+									<text style="text-anchor: middle; font: 12px &quot;Arial&quot;;" x="40" y="190" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#666" font-size="12px"><tspan dy="4">星期一</tspan></text>
+									<text x="40" y="215" text-anchor="middle" stroke="none" fill="#666"><tspan>8</tspan></text>
+									
+									<circle cx="120" cy="62" r="8" fill="#1b74bd" stroke="none" style="cursor: pointer;" stroke-width="0"/>
+									<text style="text-anchor: middle; font: 12px &quot;Arial&quot;;" x="120" y="190" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#666" font-size="12px"><tspan dy="4">星期二</tspan></text>
+									<text x="120" y="215" text-anchor="middle" stroke="none" fill="#666"><tspan>9</tspan></text>
+									
+									<circle cx="200" cy="100" r="8" fill="#1b74bd" stroke="none" style="cursor: pointer;" stroke-width="0"/>
+									<text style="text-anchor: middle; font: 12px &quot;Arial&quot;;" x="200" y="190" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#666" font-size="12px"><tspan dy="4">星期三</tspan></text>
+									<text x="200" y="215" text-anchor="middle" stroke="none" fill="#666"><tspan>10</tspan></text>
+									
+									<circle cx="280" cy="162" r="8" fill="#1b74bd" stroke="none" style="cursor: pointer;" stroke-width="0"/>
+									<text style="text-anchor: middle; font: 12px &quot;Arial&quot;;" x="280" y="190" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#666" font-size="12px"><tspan dy="4">星期四</tspan></text>
+									<text x="280" y="215" text-anchor="middle" stroke="none" fill="#666"><tspan>11</tspan></text>
+									
+									<circle cx="360" cy="162" r="8" fill="#1b74bd" stroke="none" style="cursor: pointer;" stroke-width="0"/>
+									<text style="text-anchor: middle; font: 12px &quot;Arial&quot;;" x="360" y="190" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#666" font-size="12px"><tspan dy="4">星期五</tspan></text>
+									<text x="360" y="215" text-anchor="middle" stroke="none" fill="#666"><tspan>12</tspan></text>
+									
+									<circle cx="440" cy="162" r="8" fill="#1b74bd" stroke="none" style="cursor: pointer;" stroke-width="0"/>
+									<text style="text-anchor: middle; font: 12px &quot;Arial&quot;;" x="440" y="190" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#666" font-size="12px"><tspan dy="4">星期六</tspan></text>
+									<text x="440" y="215" text-anchor="middle" stroke="none" fill="#666"><tspan>13</tspan></text>
+									
+									<circle cx="520" cy="162" r="8" fill="#1b74bd" stroke="none" style="cursor: pointer;" stroke-width="0"/>
+									<text style="text-anchor: middle; font: 12px &quot;Arial&quot;;" x="520" y="190" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#666" font-size="12px"><tspan dy="4">星期日</tspan></text>
+									<text x="520" y="215" text-anchor="middle" stroke="none" fill="#666"><tspan>14</tspan></text>
+									<g>
+										<path stroke-width="4" stroke="#1b74bd" fill="none" d="M 0 172 L 554 172"/>
+										<path stroke-width="1" stroke="#e3e3e3" fill="none" d="M 1 170 L 1 0"/>
+										<path stroke-width="1" stroke="#e3e3e3" fill="none" d="M 80 170 L 80 0"/>
+										<path stroke-width="1" stroke="#e3e3e3" fill="none" d="M 159 170 L 159 0"/>
+										<path stroke-width="1" stroke="#e3e3e3" fill="none" d="M 238 170 L 238 0"/>
+										<path stroke-width="1" stroke="#e3e3e3" fill="none" d="M 317 170 L 317 0"/>
+										<path stroke-width="1" stroke="#e3e3e3" fill="none" d="M 396 170 L 396 0"/>
+										<path stroke-width="1" stroke="#e3e3e3" fill="none" d="M 475 170 L 475 0"/>
+										<path stroke-width="1" stroke="#e3e3e3" fill="none" d="M 554 170 L 554 0"/>
+									</g>
+									<rect rx="3" ry="3" fill="rgb(255,255,255)" x="0.5" y="0.5" width="100" height="49" fill-opacity="0.85" stroke="#910000" stroke-width="1" anchorX="112.3863448623647" anchorY="33.992431640625"/>
+									<text x="8" y="21" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;color:#333333;fill:#333333;" zIndex="1"><tspan style="font-size: 12px" x="8">观看视频</tspan><tspan style="fill:#8bbc21" x="8" dy="16">1586</tspan><tspan style="font-weight:bold" dx="0">分钟</tspan></text>
+								</svg>-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sr-item sr-item-energy">
+					<div class="sr-item-inner">
+						<div class="title"><h3>我的学习能量分配</h3></div>
+						<div class="sr-item-con">
+							<div class="sr-energy">
+								<div class="energy1"><span class="name">课程</span><p class="txt">45次</p></div>
+								<div class="energy2"><span class="name">问答</span><p class="txt">32次</p></div>
+								<div class="energy3"><span class="name">习题</span><p class="txt">18次</p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="srItem-list-right">
+				<div class="sr-item sr-item-time">
+					<div class="sr-item-inner">
+						<div class="title"><h3>我最爱这个时间段学习</h3></div>
+						<div class="sr-item-con">
+							<div class="love-current">15:00 -19:00</div>
+							<div class="time-con">
+								<div class="time-txt">忙碌的时间，温柔的夕光</div>
+								<p>我在此时学习时间最长</p>
+								<p>周围有<em>52684</em>人跟我习惯一样</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sr-item sr-item-user">
+					<div class="sr-item-inner">
+						<div class="title"><h3>和我相似的同学</h3></div>
+						<div class="sr-item-con">
+							<div class="sr-user-face"><img title="令狐冲" src="../img/uCenter/user-pic.jpg" width="180" height="180" alt=""></div>
+							<div class="sr-user-bar"><a class="addAtten" href="#"><span class="icon-addAtten">+</span>关注</a></div>
+							<!--已关注-->
+							<!--<div class="sr-user-bar"><div class="readyAtten"><span class="icon-ok"></span>已关注</div></div>-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sr-result">
+			<div class="title"><h3>我的本周成绩</h3></div>
+			<!-- <div class="sr-comment sr-commen01">超乎想象</div> -->
+			<!-- <div class="sr-comment sr-commen02">极度威5</div> -->
+			<!-- <div class="sr-comment sr-commen03">牛X </div> -->
+			<div class="sr-comment sr-commen04">没发挥实力</div>
+			<!-- <div class="sr-comment sr-commen05">水到家</div> -->
+			<!-- <div class="sr-comment sr-commen06">不学无术</div> -->
+			<!-- <div class="sr-comment sr-commen07">请问您还打算过吗？！</div> -->
+			<ul class="sr-result-list">
+				<li>
+					<h4>学习成绩</h4>
+					<span class="icon sr-result-studyIcon"></span>
+					<div class="sr-result-progressbar"><div class="sr-result-progressbar-value" style="width:90%;"></div></div>
+					<p>超过<em>90%</em>用户</p>
+				</li>
+				<li>
+					<h4>练习成绩</h4>
+					<span class="icon sr-result-practiceIcon"></span>
+					<div class="sr-result-progressbar"><div class="sr-result-progressbar-value" style="width:35%;"></div></div>
+					<p>超过<em>35%</em>用户</p>
+				</li>
+				<li>
+					<h4>问答成绩</h4>
+					<span class="icon sr-result-QAIcon"></span>
+					<div class="sr-result-progressbar"><div class="sr-result-progressbar-value" style="width:68%;"></div></div>
+					<p>超过<em>68%</em>用户</p>
+				</li>
+			</ul>
+			<div class="sr-share">
+				<div class="bshare-custom">
+					<span class="share-txt">分享到:</span>
+					<a id="J-shareClassmate" title="分享到同学圈" class="share-classmte"></a>
+					
+					<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+					<a title="分享到腾讯微博" class="bshare-qqmb"></a>
+					<a title="分享到人人网" class="bshare-renren"></a>
+					<a title="分享到豆瓣" class="bshare-douban"></a>
+
+					<a title="更多平台" id="bshare-more-icon" class="bshare-more">更多&gt;&gt;</a>
+				</div>
+				<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=<你的UUID>&style=-1"></script>
+				<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC1.js"></script>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<!--main end-->
+
+<!--footer start-->
+<div class="footer">
+	<div class="footer-box">
+        <div class="f-service"><a href="#">关于嗨学网</a> <span>|</span> <a href="#">官方微博</a> <span>|</span> <a href="#">联系我们</a> <span>|</span> <a href="#">给嗨学网留言</a></div>
+        <div class="f-info">京ICP备10217787&nbsp;&nbsp; 京公网安备110105012436&nbsp;&nbsp; copyright2010-2012 haixue.com</div>
+    </div>
+</div>
+<!--footer end-->
+
+<div id="J-classMatePop" class="popup" style="display:none; position:absolute; top:875px; left:950px; z-index: 10003;">
+    <div class="popup-bg">
+        <div class="popup-outer">
+            <table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td>
+                <div class="popup-con">
+                    <p class="fb"><span class="popun-icon popun-icon-ok"></span>成功分享到了<a class="color_blue" href="uc-friend.html">同学圈</a>，晒到了<a class="color_blue" href="uc-timeline.html">我的主页</a>！</p>
+                    <p class="pl30 mt10 tc"><a class="btn-small btn-blue mr10" onClick="closePop(this)" href="javascript:void(0)">确定</a></p>
+                </div>
+            </td></tr></tbody></table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

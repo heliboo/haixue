@@ -1,0 +1,17 @@
+/*非白金会员提示*/
+.not-ques-box{ margin-top:10px; border:1px solid #e5e5e5;}
+.not-ques-con{ padding:20px 30px;}
+.not-ques-bar{ padding:20px 0 15px 0; background:url(../../images/uCenter/not-question-bg.png) no-repeat center top; text-align:center;}
+.not-ques-bar a{ width:260px; padding:0; height:42px; line-height:42px; font-weight:bold; font-size:20px;}
+.not-ques-box h3{ height:50px; line-height:50px; padding-left:60px; background:url(../../js/skins/icons/warning.png) no-repeat left; font-size:18px; font-family:Microsoft Yahei; font-weight:500;}
+.not-ques-box .pro{ margin:10px 0 0 60px; font-weight:bold;}
+.not-ques-box ul{ margin:10px 0 0 60px;}
+.not-ques-box ul li{ width:100%; overflow:hidden; line-height:22px; margin-bottom:10px;}
+.not-ques-box ul li .tit{ width:48px; float:left;}
+.not-ques-box ul li p{ margin-left:48px;}
+.not-ques-con a{ color:#FF7E00; font-weight:bold;}
+
+
+
+
+

@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>选择商品-嗨学网后台管理系统</title>
+<link href="../style/base.css" rel="stylesheet">
+<link href="../style/uCenter/uc-common2.css" rel="stylesheet">
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.artDialog.js"></script>
+<script type="text/javascript" src="../js/iframeTools.js"></script>
+<script type="text/javascript">
+// 表格换色
+$(document).ready(function() {
+	$(".table-list table").find("tr:even").addClass("alt-row");
+	$(".table-list tr").live({
+		mouseover:function(){
+			$(this).addClass("on");
+		},
+		mouseout:function () {
+			$(this).removeClass("on");
+		}
+	});
+});
+</script>
+</head>
+
+<body>
+<div class="iframe-con">
+    <div class="search-form">
+        <form name="" method="" action="">
+            <fieldset>
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label>类别：</label><input type="text" name="" class="text-input">
+                                <label>关键字：</label><input type="text" name="" class="text-input">
+                                <input type="button" value="查询" class="btn-blue btn-mid ml10">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+    <div class="table-list">
+        <table>
+            <thead>
+                <tr>
+                    <th width="100"><input type="checkbox" class="check-all"> 商品ID</th>
+                    <th>商品名称</th>
+                    <th>创建时间</th>
+                    <th>售价</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"> 1112234</td>
+                    <td>全长时效冲关精讲班</td>
+                    <td>2012-10-10 10：48</td>
+                    <td>800</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> 1112234</td>
+                    <td>全长时效冲关精讲班</td>
+                    <td>2012-10-10 10：48</td>
+                    <td>800</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> 1112234</td>
+                    <td>全长时效冲关精讲班</td>
+                    <td>2012-10-10 10：48</td>
+                    <td>800</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> 1112234</td>
+                    <td>全长时效冲关精讲班</td>
+                    <td>2012-10-10 10：48</td>
+                    <td>800</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> 1112234</td>
+                    <td>全长时效冲关精讲班</td>
+                    <td>2012-10-10 10：48</td>
+                    <td>800</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> 1112234</td>
+                    <td>全长时效冲关精讲班</td>
+                    <td>2012-10-10 10：48</td>
+                    <td>800</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> 1112234</td>
+                    <td>全长时效冲关精讲班</td>
+                    <td>2012-10-10 10：48</td>
+                    <td>800</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> 1112234</td>
+                    <td>全长时效冲关精讲班</td>
+                    <td>2012-10-10 10：48</td>
+                    <td>800</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> 1112234</td>
+                    <td>全长时效冲关精讲班</td>
+                    <td>2012-10-10 10：48</td>
+                    <td>800</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> 1112234</td>
+                    <td>全长时效冲关精讲班</td>
+                    <td>2012-10-10 10：48</td>
+                    <td>800</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--start 分页-->
+        <div class="pager">
+            <div class="pager_con"><span class="total">201条</span><a class="disabled" href="#">上一页</a><a class="current" href="#">1</a><a href="#">2</a><a href="#">3</a><span class="separator">…&nbsp;</span><a href="#">101</a><a href="#">102</a><a href="#">下一页</a></div>
+        </div>
+        <!--end 分页-->
+    </div>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,146 @@
+body{ background: url(../images/help-about-us/help_bodybg.png);}
+
+
+.header2{ width:100%; height:64px; margin:353px auto 0; overflow:hidden; background:url(../images/help-about-us/header3bg.png) repeat-x;}
+.header2 .top_nav{ width:1000px; margin:0 auto; overflow:hidden; background:url(../images/help-about-us/aboutus_nav.jpg) no-repeat;}
+.top_nav ul{ height:64px; float:right;}
+.top_nav ul li{ width:166px; float:left;}
+.top_nav ul li a:link,.top_nav ul li a:visited{ width:166px; height:45px; line-height:40px; margin-top:10px; text-align:center; float:left; font-size:14px; font-weight:bold; color:#fff; font-family:"微软雅黑","黑体";}
+.top_nav ul li.current1 a:link,.top_nav ul li.current1 a:visited{ background:url(../images/help-about-us/aboutus_navli.jpg) no-repeat -170px;}
+.top_nav ul li.current2 a:link,.top_nav ul li.current2 a:visited{ background:url(../images/help-about-us/aboutus_navli.jpg) no-repeat -336px;}
+.top_nav ul li.current3 a:link,.top_nav ul li.current1 a:visited{ background:url(../images/help-about-us/aboutus_navli.jpg) no-repeat -502px;}
+.top_nav ul li.current4 a:link,.top_nav ul li.current2 a:visited{ background:url(../images/help-about-us/aboutus_navli.jpg) no-repeat -668px;}
+.top_nav ul li.current5 a:link,.top_nav ul li.current1 a:visited{ background:url(../images/help-about-us/aboutus_navli.jpg) no-repeat -834px;}
+
+#main{ width:1000px; background:#fbfbfb url(../images/help-about-us/abouttopbg.jpg) no-repeat center top; margin:0 auto; overflow:hidden; padding:10px 0px; position:relative;}
+.big_title{ float:left; display:inline; margin-top:40px;}
+.tab_menu{ float:right; margin-top:85px;}
+.tab_menu li{ width:110px; height:26px; line-height:26px; padding-left:10px; float:left; display:inline; margin-left:6px; background: url(../images/help-about-us/aboutus_tab.png) no-repeat -126px; font-weight:bold; cursor:pointer;}
+.tab_menu li.current{ background:url(../images/help-about-us/aboutus_tab.png) no-repeat left; color:#fff;}
+.tab_menu li.hoverli{ background:url(../images/help-about-us/aboutus_tab.png) no-repeat left; color:#fff;}
+.main_con{ width:1000px; overflow:hidden; padding-top: 10px;}
+.tab_con{ width:1000px; overflow:hidden;}
+.about_con{ width:1000px; overflow:hidden;}
+.left_con{ width:230px; float:left; padding-top:20px;}
+.right_con{ width:690px; float:right; padding-top:20px;}
+.small_title{ float:left; margin-top:30px;}
+
+/*面包屑导航*/
+.crumbs{ float:right; margin-top:30px; color:#444; position: absolute; right: 0px; top: -10px;}
+.crumbs a:link,.crumbs a:visited{ color:#9d9d9d; padding:0 4px;}
+.crumbs em{ padding-right:10px; background:url(../images/help-about-us/about_icon1.png) no-repeat right;}
+
+/*公司简介*/
+.intro_p{ font-size:16px; font-family:"微软雅黑","黑体"; padding-left:20px; text-indent:2em; line-height:28px;}
+.intro_text{ line-height:26px; padding-left:20px; text-indent:2em; color:#686868; margin-top:10px;}
+.s_banner{ text-align:center;}
+.show_company{ width:674px; height:492px; overflow:hidden; background:url(../images/help-about-us/photo_frame1.png) no-repeat; margin-top:20px; position:relative;}
+.intro_big{ width:613px; height:386px; overflow:hidden; margin:33px 0 0 27px;}
+.intro_small{ width:613px; height:70px; position:absolute; left:27px; bottom:72px; z-index:10;}
+.tmc{ width:613px; height:70px; position:absolute; left:27px; bottom:72px; background:#000; filter:alpha(opacity=50); -moz-opacity:0.50; opacity:0.50;}
+.intro_small ul{}
+.intro_small ul li{ width:72px; height:46px; float:left; display:inline; margin:12px 0 0 13px; cursor:pointer;}
+.intro_small ul li.current{ border:3px solid #da7646; margin-top:8px;}
+.show_company .pic_text{ font-weight:bold; margin:10px 0 0 40px; padding-left:20px; background:url(../images/help-about-us/about_icon2.png) no-repeat left;}
+
+
+/*公司文化*/
+.about_culture h4{ height:52px; line-height:52px; font-size:14px; color:#d85121; font-weight:bold; padding-left:70px; margin-top:10px;}
+.about_culture .ct1{ background:url(../images/help-about-us/culture_icon1.png) no-repeat left;}
+.about_culture .ct2{ background:url(../images/help-about-us/culture_icon2.png) no-repeat left;}
+.about_culture .ct3{ background:url(../images/help-about-us/culture_icon3.png) no-repeat left;}
+.about_culture .ct4{ background:url(../images/help-about-us/culture_icon4.png) no-repeat left;}
+.about_culture p{ line-height:26px; padding-left:70px; text-indent:2em; color:#686868;}
+.about_culture h5{ font-weight:bold; padding-left:70px; text-indent:2em; line-height:26px; color:#686868;}
+.honor{ margin-top:30px;}
+.about_talents{ height:358px; background:url(../images/help-about-us/talentsbg.jpg) no-repeat;}
+.about_talents .p1{ font-size:18px; color:#fff; font-family:"微软雅黑","黑体"; width:500px; text-indent:2em; line-height:30px; margin:140px 0 0 300px;}
+.about_talents .p2{ width:540px; line-height:24px; color:#aaa; text-indent:2em; margin:40px 0 0 440px;}
+/*团队风采*/
+.about_team{ height:585px; background:url(../images/help-about-us/about_teambg.jpg) no-repeat;}
+.team_text{ width:300px; height:370px; overflow:hidden; float:left; display:inline; margin:45px 0 0 44px; position:relative;}
+.team_text p{ color:#fff; text-indent:2em; line-height:24px; margin-top:20px;}
+.team_text p em{ font-weight:bold;}
+.team_text p.nod{ display:none;}
+.team_prev{ position:absolute; right:40px; bottom:10px; display:block; text-indent:-9999px; width:11px; height:8px; background:url(../images/help-about-us/nextprev1.png) no-repeat 0 0px; cursor:pointer;}
+.team_next{ position:absolute; right:10px; bottom:10px; display:block; text-indent:-9999px; width:11px; height:8px; background:url(../images/help-about-us/nextprev1.png) no-repeat right -8px; cursor:pointer;}
+
+.team_bigpic{ width:559px; height:268px; overflow:hidden; float:right; display:inline; margin:96px 46px 0 0;}
+.team_small_pic{ width:800px; overflow:hidden; clear:both; padding:40px 40px 0 80px; position:relative;}
+.team_small_pic .small_show{ width:654px; height:92px; overflow:hidden; position:relative;}
+.team_small_pic ul{ width:2000px; position:absolute; left:0;}
+.team_small_pic ul li{ width:139px; height:90px; float:left; display:inline; margin:0 30px 0 0; border:1px solid #ffda87; cursor:pointer;}
+.tpic_prev{ position:absolute; left:20px; top:70px; cursor:pointer; text-indent:-9999px; display:block; width:32px; height:32px; background:url(../images/help-about-us/teamshow_btn.png) 0 0px;}
+.tpic_next{ position:absolute; right:130px; top:70px; cursor:pointer; text-indent:-9999px; display:block; width:32px; height:32px; background:url(../images/help-about-us/teamshow_btn.png) -32px 0px;}
+.tpic_prev_hover{ background:url(../images/help-about-us/teamshow_btn.png) 0 -32px;}
+.tpic_next_hover{ background:url(../images/help-about-us/teamshow_btn.png) -32px -32px;}
+/*辉煌历史*/
+.about_history{ height:811px; background:url(../images/help-about-us/about_history.png) no-repeat center; margin-top:20px; clear:both;}
+.history{ padding:0 0 0 90px;}
+.history li{ width:780px; overflow:hidden; float:left;}
+.history li span{ float:left; color:#363636; font-weight:bold; line-height:24px;}
+.history li p{ width:660px; line-height:24px; float:left; padding-left:30px;}
+.history .y2011{ margin-top:12px;}
+.history .y2011 p{ color:#e44c01; font-weight:bold;}
+.history .y2010{ margin-top:50px;}
+.history .y2010 span,.history .y2009 span,.history .y2006 span,.history .y2005 span,.history .y2003 span,.history .y2002 span{ padding-top:10px;}
+.history .y2009{ margin-top:25px;}
+.history .y2008{ margin-top:26px;}
+.history .y2007{ margin-top:30px;}
+.history .y2006{ margin-top:26px;}
+.history .y2005{ margin-top:26px;}
+.history .y2004{ margin-top:20px;}
+.history .y2003{ margin-top:24px;}
+.history .y2002{ margin-top:24px;}
+.history .y2001{ margin-top:22px;}
+.history .y2001 span{ padding-top:27px;}
+/*网站地图*/
+.map_box{ width:920px; overflow:hidden; padding:0 40px;}
+.map_box h3{ height:31px; line-height:31px; color:#fff; font-weight: bold; padding-left:30px; background:url(../images/help-about-us/map_h3bg.png) repeat-x;}
+.map_box ul{ width:918px; border:1px solid #c6c6c6; border-top:none; background:#f6f6f6; overflow:hidden;}
+.map_box ul li{ height:42px; line-height:42px; float:left; padding:0 30px; background:url(../images/help-about-us/map_libr.png) no-repeat right center;}
+.map_box ul li.last{ background:none;}
+.map_box a:link,.map_box a:visited{ color:#686868;}
+/*联系我们*/
+.address_map{ width:1000px; overflow:hidden;}
+.contact_div{ padding:20px 0; margin:0 20px; border-bottom:1px dashed #e0e0e0; overflow:hidden;}
+.main_con .last{ border-bottom:none;}
+.contact_div h3{ font-size:14px; font-weight:bold; color:#dc5421;}
+.contact_div p{ margin-top:10px;}
+/*法律声明*/
+.legal_div{ width:940px; margin:0 20px; overflow:hidden;}
+.legal_div h3{ height:52px; line-height:52px; font-size:14px; color:#d85121; font-weight:bold; padding-left:70px; margin-top:10px;}
+.legal_div h3.lt1{ background:url(../images/help-about-us/culture_icon1.png) no-repeat left;}
+.legal_div h3.lt2{ background:url(../images/help-about-us/legal_icon1.png) no-repeat left;}
+.legal_div p{ line-height:26px; padding-left:70px; text-indent:2em; color:#686868;}
+/*隐私声明*/
+.privacy_div{ width:940px; margin:0 20px; overflow:hidden; padding-top:20px;}
+.privacy_div h3{ height:52px; line-height:52px; font-size:14px; color:#d85121; font-weight:bold; padding-left:40px; margin-top:10px;}
+.privacy_div h3.lt1{ background:url(../images/help-about-us/culture_icon1.png) no-repeat left;}
+/*.privacy_div h3.lt2{ background:url(../images/help-about-us/legal_icon1.png) no-repeat left;}*/
+.privacy_div h3.lt2{ background: url(../images/help-about-us/help_item_hbg.png) no-repeat 20px;}
+.privacy_div p{ line-height:26px; padding-left:40px; text-indent:2em; color:#686868;}
+.privacy_div ul{ line-height:24px; padding-left:40px; text-indent:2em; color:#686868;}
+.privacy_div p a:link,.privacy_div p a:visited{ color:#00F; text-decoration:underline;}
+/*人才招聘*/
+.job_div{ padding:20px 20px 0; overflow:hidden; clear:both;}
+.job_div table{ width:100%; border-collapse:collapse; margin-bottom:20px; border-bottom:1px solid #c6c6c6;}
+.job_div table caption{ height:30px; line-height:30px; color:#fff; font-weight:bold; font-size:14px; clear:both;}
+.job_div table caption span{ background:url(../images/help-about-us/legal_h3bg.png); height:30px; float:left; padding:0 20px;}
+.job_div table thead{}
+.job_div table thead th{ height:31px; line-height:31px; vertical-align:middle; background:url(../images/help-about-us/map_h3bg.png); overflow:hidden; color:#fff;}
+.job_div table thead th span{ display:block; background: url(../images/help-about-us/job_thbr.png) no-repeat right;}
+.job_div table thead th.name{ width:200px;}
+.job_div table thead th.intro{ width:590px;}
+.job_div table thead th.people span{ background:none;}
+.job_div table td{ vertical-align:middle; padding:10px 0; text-align:center; border-bottom:1px solid #c6c6c6;}
+.job_div table td.name_text{ color:#dc5421; background:#efefef; border-left:1px solid #c6c6c6;}
+.job_div table td.people_text{ color:#dc5421; background:#efefef; border-right:1px solid #c6c6c6;}
+.job_div table td.people_text a:link,.job_div table td.people_text a:visited{ text-decoration:underline;}
+.job_div table .show_job td{ text-align:left; padding:20px; line-height:30px; border:1px solid #c6c6c6; border-top:none; position:relative;}
+.job_div table .show_job h4{ color:#dc5421; font-weight:bold;}
+.job_div table .show_job p a:link,.job_div table .show_job p a:visited{ color:#dc5421;}
+.job_div table .show_job td .job_close{ float:right; display:inline; margin-right:30px; text-decoration:underline; cursor:pointer;}
+
+/* 页尾 --*/
+#footer{padding: 50px 0 20px 0; text-align:center;}
